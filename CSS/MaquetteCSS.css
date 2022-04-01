@@ -1,0 +1,35 @@
+body{background-color: palegreen}
+
+#en_tete{
+    text-align: center;
+    font-family: Alef;
+    background-color: rgb(200, 225, 200);
+    border: 1px solid black;
+    border-style: dotted;
+}
+
+#menu{
+    text-align: center;
+    font-family: Alef;
+    background-color: rgb(200, 225, 200);
+    border: 1px solid black;
+    border-style: dotted;
+}
+
+#Menu2{
+    text-align: center;
+    font-family: Alef;
+    background-color: rgb(200, 225, 200);
+    border: 1px solid black;
+    border-style: dotted;
+
+}
+
+@font-face {
+    font-family: "Zelda";
+    src: url(../font/Zelda.otf);
+}
+@font-face {
+    font-family: GLPI;
+    src: url(../font/PHARMACY.ttf);
+}
