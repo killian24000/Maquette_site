@@ -7,13 +7,18 @@
     <title>Document</title>
     <link href="CSS/MaquetteCSS.css" rel="stylesheet">
     <script>
-        date = new Date();
-        year = date.getFullYear();
-        month = date.getMonth() + 1;
-        day = date.getDate();
-        document.write(document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year);
-)
-        
+        RecupDate = new Date();
+        annee = RecupDate.getFullYear();
+        mois = RecupDate.getMonth() + 1;
+        if (mois<10){
+            mois="0"+mois
+        }
+        jour = RecupDate.getDate();
+        if (jour<10){
+            jour="0"+jour
+        }
+        DateDuJour=(annee+"-"+mois+"-"+jour);
+        document.write(DateDuJour)
     </script>
 </head>
 <body>
@@ -47,7 +52,7 @@
                     Date Rapport
                 </td>
                 <td>
-                    <input type="date" name="DateDuRapport" id="DateRapport" value="DateDuJour">
+                    <input type="date" name="DateDuRapport" id="DateRapport" value={new Date(this.state.changeEndDate)}>
                 </td>
             </tr>
         </table>
