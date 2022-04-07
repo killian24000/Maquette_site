@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GLPI/formulaire d'inscription</title>
+    <link href="CSS/MaquetteCSS.css" rel="stylesheet">
+
+<script type="text/javascript">
+    function verifChamps()
+    {
+        if(document.getElementById('denomination').value==''
+        ||document.getElementById('mel').value==''
+        ||document.getElementById('mot').value=='')
+        {
+            alert("remplir tout les champs");
+            return false;
+        }
+        return true;
+    }
+</script>
 </head>
 <body>
-    
+    <div id="inscription">
+    <form method="post" name="inscription" action="" onSubmit="return verifChamps()">
+        <h3>Inscription</h3>    
+        <p align="center">
+            <input type="text">
+            <input type="submit" name="envoi" value="Envoyer">
+            <input type="reset" name="annulation" value="Annuler">
+        </p>
+    </form>
+    </div>
 </body>
 </html>
