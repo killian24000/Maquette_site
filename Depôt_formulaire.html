@@ -1,11 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="CSS/MaquetteCSS.css" rel="stylesheet">
+    <script>
+        date = new Date();
+        year = date.getFullYear();
+        month = date.getMonth() + 1;
+        day = date.getDate();
+        document.write(document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year);
+)
+        
+    </script>
 </head>
 <body>
-Coucou
-
+    <div>
+        <h2>RAPPORTS DE VISITE</h2>
+        <table>
+            <tr>
+                <td>
+                    Numéro de rapport
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Practitien
+                </td>
+                <td>
+                    <!--
+                    Slct_Practitient : Selection de practition
+                    <select> : Liste déroulante-->
+                    <select name="NomPractitien" id="Slct_Practitient">
+                        <option value="">Choisire un Practitien</option>
+                        <!-- lier a la base de donne pour reccupérer les nom -->
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Date Rapport
+                </td>
+                <td>
+                    <input type="date" name="DateDuRapport" id="DateRapport" value="DateDuJour">
+                </td>
+            </tr>
+        </table>
+    </div>
 </body>
-
 </html>
