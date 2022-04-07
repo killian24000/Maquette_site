@@ -23,12 +23,18 @@
 </head>
 <body>
     <div id="inscription">
-    <form method="post" name="inscription" action="" onSubmit="return verifChamps()">
+    <form method="post" name="inscription" action="/Inscription.php" onSubmit="return verifChamps()">
         <h3>Inscription</h3>    
         <p align="center">
-            <input type="text">
+            <h3>Nom:</h3><input type="text">
+            <h3>Mél:</h3><input type="text">
+            <h3>Mot de passe:</h3><input type="password">
+            <br>
+            <br>
+            <p>
             <input type="submit" name="envoi" value="Envoyer">
             <input type="reset" name="annulation" value="Annuler">
+            </p>
         </p>
     </form>
     </div>
