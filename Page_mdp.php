@@ -1,23 +1,14 @@
-<HTML>
-    <head>
-     <meta charset="utf-8">
-     <title>GLPI/Identification</title>
-     <link href="CSS/MaquetteCSS.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="mot_de_passe">
-            <h3>Identifiant</h3>
-        <input type="text">
-            <h3>Mot de Passe</h3>
-        <input type="password">
-        <script language="javascript" type="text/javascript">
-        
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
 
-        </script>
-        <?php
-
-
-        ?>
-        </div>
+    ?>
 </body>
-</HTML>
+</html>
