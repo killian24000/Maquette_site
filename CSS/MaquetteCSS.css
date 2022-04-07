@@ -46,6 +46,15 @@ body{background-color: palegreen}
     margin-right: 220px;
 }
 
+#mot_de_passe
+{
+    text-align: center;
+    font-family: Alef;
+    background-color: rgb(200, 225, 200);
+    border: 1px  solid black;
+    border-style: dotted;
+    border-radius:20px;
+}
 @font-face {
     font-family: "Zelda";
     src: url(../font/Zelda.otf);
