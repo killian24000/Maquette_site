@@ -3,12 +3,17 @@
 <?php
     //Appel du script de connexion
     include('connect.php');
-    $denomination=''
-    $mdp=''
-    $mel=''
+   
+    //---------------------------------------------------------------------
+	// R�cup�rer les valeurs saisies dans le formulaire dans les variables
+	//---------------------------------------------------------------------
+    $denomination=$_POST["nom"];
+    $mdp=$_POST["motDePasse"];
+    $mel=$_POST["mel"];
+    echo("$denomination"." "."$mdp"." "."$mel");
     //On récupère dans des variables les données saisies par l'utilisateur
-    $reqSQL="INSERT INTO utilisateur VALUES ('$denomination','$mdp',$mel')";
-
+    $reqSQL="INSERT INTO utilisateur VALUES ('$denomination','$mdp','$mel')";
+    
     //Execution de la requête
     $connexion->exec($reqSQL) or die ("erreur dans la requête sql");
 
