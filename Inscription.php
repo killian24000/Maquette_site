@@ -3,7 +3,9 @@
 <?php
     //Appel du script de connexion
     include('connect.php');
-
+    $denomination=''
+    $mdp=''
+    $mel=''
     //On récupère dans des variables les données saisies par l'utilisateur
     $reqSQL="INSERT INTO utilisateur VALUES ('$denomination','$mdp',$mel')";
 
