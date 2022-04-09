@@ -6,20 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="CSS/MaquetteCSS.css" rel="stylesheet">
-    <script>
-        RecupDate = new Date();
-        annee = RecupDate.getFullYear();
-        mois = RecupDate.getMonth() + 1;
-        if (mois<10){
-            mois="0"+mois
-        }
-        jour = RecupDate.getDate();
-        if (jour<10){
-            jour="0"+jour
-        }
-        DateDuJour=(annee+"-"+mois+"-"+jour);
-        document.write(DateDuJour)
-    </script>
+    <!--Appelle du fichier contenant toutes les fonctions JavaScript-->
+    <script src="JavaScript/function.js"></script>
 </head>
 <body>
     <div>
@@ -52,7 +40,11 @@
                     Date Rapport
                 </td>
                 <td>
-                    <input type="date" name="DateDuRapport" id="DateRapport" value={new Date(this.state.changeEndDate)}>
+                    <script>
+                        //Pour que input type=date soit par defaut sur la date du jour il faut utiliser du javascript ou php
+                        //Utilisattion de la fonction DateDuJour() pour récuppérer et convertir au bon format la date
+                        document.write('<input type="date" name="des" id="des" value="'+DateDuJour()+'" min="'+DateDuJour()+'">');
+                    </script>
                 </td>
             </tr>
         </table>
