@@ -10,7 +10,6 @@
         function verifChamps()
         {
             if(document.getElementById('demonination').value==''
-            ||document.getElementById('mel').value==''
             ||document.getElementById('mot').value=='')
             {
             alert("remplir tout les champs");
@@ -23,12 +22,12 @@
     <div id="logo">
         <img src="Image/logo-glpi.png">
     </div>
-    <form action="Page_acceuil.html" method="post">
+    <form action="Page_acceuil.html" method="post" onsubmit="verifChamps()">
         <div id="mot_de_passe">
             <h3>Identifiant</h3>
-        <input type="text">
+        <input type="text" name="demonination">
             <h3>Mot de Passe</h3>
-        <input type="password">
+        <input type="password" name="mot">
         <br>
         <br>
         <input type="submit"> <button type="reset" name="annulation" value="Annuler">Annuler</button>
