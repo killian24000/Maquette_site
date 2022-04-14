@@ -40,6 +40,14 @@
             </tr>
             <tr>
                 <td>
+                    Coeficient
+                </td>
+                <td>
+                    <input type="number" name="Coef" id="Coef">
+                </td>
+            </tr>
+            <tr>
+                <td>
                     Date Rapport
                 </td>
                 <td>
@@ -55,7 +63,13 @@
                     Motif de la visite
                 </td>
                 <td>
-                    <input type="text">
+                    <select name="TypeMotif" id="Slct_Motif">
+                        <option value="PRD">Périodicité</option>
+                        <option value="ACT">Actualisation</option>
+                        <option value="REL">Relance</option>
+                        <option value="SOL">Sollicitation praticien</option>
+                        <option value="AUT">Autre</option>
+                    </select>
                 </td>
             </tr>
             <tr>
@@ -64,6 +78,72 @@
                 </td>
                 <td>
                     <textarea name="" id="" cols="30" rows="10" maxlength="1000"></textarea>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="en_tete">
+        <h2>ELEMENT PRESENTES</h2>
+    </div>
+    <div id="menu">
+        <table style="margin: auto;">
+            <tr>
+                <td>
+                    Produit 1 :
+                </td>
+                <td>
+                    <select name="Prod1" id="Slct_Prod1">
+                        <option value=""></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Produit 2 :
+                </td>
+                <td>
+                    <select name="Prod2" id="Slct_Prod2">
+                        <option value=""></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Documentation :
+                </td>
+                <td>
+                    <input type="checkbox" name="CheckDoc" id="Cbx_Doc">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="en_tete">
+        <h2>
+            ENCHANTILLONS
+        </h2>
+    </div>
+    <div id="menu">
+        <table style="margin: auto;">
+            <tr>
+                <!--Rendre l'affichage des echantillons dynamic en fonctionde si le medecin est nouveau ou non-->
+                <td>
+                    Echantillons 1 :
+                </td>
+                <td>
+                    <select name="ListeEchantillons1" type="Slct_Echantillons1" style="width: 2cm;">
+                        <option value=""></option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" name="NbEchantillons1" id="NbEnchantillons1" style="width: 50px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Saisie définitive : 
+                </td>
+                <td>
+                    <input type="checkbox" name="CheckDefinitif" id="Cbx_Definitif">
                 </td>
             </tr>
         </table>
