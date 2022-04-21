@@ -83,6 +83,7 @@ body{background-color: palegreen}
     border: 1px solid black;
     border-style: dotted; 
     border-radius: 20px;
+    margin-top: 100px;
     margin-left: 250px;
     margin-right: 220px;
 }

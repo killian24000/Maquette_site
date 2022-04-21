@@ -8,6 +8,9 @@
     <title>GLPI/Médicament</title>
 </head>
     <body>
+        <?php
+        include("HautDePage.HTML")
+        ?>
             <div id="test">
                     <p>
                         <h2>PHARMACOPEE</h2> 
@@ -47,5 +50,8 @@
             </div>
             
         </div>
+        <?php
+        include("BasDePage.HTML")
+        ?>
     </body>
 </html>

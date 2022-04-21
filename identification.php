@@ -41,5 +41,5 @@
     //On libère le jeu d'enregistrement
     $res->closeCursor();
     //on ferme la connexion au SGBD
-    $connexion = NULL;
+    $connexion = null;
 ?>
