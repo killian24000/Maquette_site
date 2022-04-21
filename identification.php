@@ -26,7 +26,7 @@
         echo"Votre saisi est erroné, Recommencer SVP... ";
 
         //On inclu le formulaire d'identification ()
-        include('page_mdp.html');    
+        include('index.php');    
     }
     else 
     // Le mot de passe saisi correspond � celui de la base utilisateur

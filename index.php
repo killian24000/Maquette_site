@@ -19,9 +19,9 @@
     </script>
 </head>
 <body>
-    <div id="logo">
-        <img src="Image/logo-glpi.png">
-    </div>
+    <?php
+    include("HautDePage.HTML")
+    ?>
     <form action="identification.php" method="post" onsubmit="verifChamps()">
         <div id="mot_de_passe">
             <h3>Identifiant</h3>
@@ -39,5 +39,8 @@
         </p>
         </div>
     </form>
+    <?php
+    include("BasDePage.HTML")
+    ?>
 </body>
 </html>
