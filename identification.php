@@ -1,21 +1,16 @@
 <?php
-
+    ob_start();
     //Appel du script de connexion au serveur et à la base de donnée 
     require("connect.php");
 
     //On récupère les données saisies dans le formulaire 
     $nomSaisi = $_POST["nom"];
-    $motPasseSaisi = $_POST["motDePasse"];
+    $motPasseSaisi = $_POST["mdp"];
 
     //On récupère dans la base de données le mot de passe qui correspond au nom saisi par le visiteur 
-     $reqSQL ="SELECT motDePasse FROM utilisateur WHERE nom = '$nomSaisi'";
-
-     $res = $connexion->query($reqSQL);
-
-    //$parcours du jeu d'enrgistrements : selection du premier enregistrement
+    $reqSQL ="SELECT motDePasse FROM utilisateur WHERE nom = '$nomSaisi'";
+    $res = $connexion->query($reqSQL);
     $ligne = $res->fetch();
-    //on affecte la valeur de chaque cellule du tableau à une variable 
-
     $motDePasseBdd = $ligne['motDePasse'];
 
     //On vérifie que le mot de passe saisi est identique à celui enregistrer dans la base de données
@@ -25,18 +20,18 @@
     {
         echo"Votre saisi est erroné, Recommencer SVP... ";
 
-        //On inclu le formulaire d'identification ()
-        include('index.php');    
+        //On inclu le formulaire d'identification (index.php)
+        include('index.php');
+        //On quitte le script courant sans effectuer les éventuelles instructions qui suivent 
+        exit; 
     }
     else 
     // Le mot de passe saisi correspond � celui de la base utilisateur
-    {
-        //démarrage d'une session 
-        session_start();
-        //Création d'une variable de session
-        $_SESSION['ok']="oui";
+    {  
         //retour vers la page d'entrée du site
-        header("location:index.php"); 
+        header("location:Page_acceuil.php"); 
+        ob_end_flush();
+        //on quitte le script courant sans effectuer les éventuelles instructions qui suivent
         exit;
     }
     //On libère le jeu d'enregistrement
