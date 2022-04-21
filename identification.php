@@ -36,7 +36,7 @@
         //Création d'une variable de session
         $_SESSION['ok']="oui";
         //retour vers la page d'entrée du site
-        header("location:Page_acceuil.html"); 
+        header("location:index.php"); 
     }
     //On libère le jeu d'enregistrement
     $res->closeCursor();

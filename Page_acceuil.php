@@ -6,13 +6,12 @@
         <link href="CSS/MaquetteCSS.css" rel="stylesheet">
     </head>
     <body>
+        <?php
+        include("HautDePage.HTML")
+        ?>
         <!audio autoplay>
             <!source src="audio/Galeries_Balder_-_The_Legend_of_Zelda_Twilight_Princess_HD_OST.mp3" type="audio/mpeg">
         <!/audio> 
-        <div id="en_tete">
-            <img src="Image/logo-glpi.png">
-            <p><h1>Bienvenue sur GLPI !</h1></p>
-        </div>
         <div id="menu">
             <h3>Compte-rendu :</h3>
         <div class="sous-menu">
@@ -35,8 +34,8 @@
             <br>
         </div>
         </div>
-        <div id="pied_de_page">
-            <p><h3>Code et Design par l'entreprise Judr.Dot</h3></p>
-        </div>
+        <?php
+        include("BasDePage.HTML")
+        ?>
     </body>
 </HTML>

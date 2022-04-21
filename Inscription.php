@@ -23,6 +23,6 @@
     //on ferme la connexion
     $connexion=null;
     ?>
-<a href = "page_mdp.html"> Retour à la page d'accueil <a/>
+<a href = "index.php"> Retour à la page d'accueil <a/>
 </body>
 </html>
