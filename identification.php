@@ -37,6 +37,7 @@
         $_SESSION['ok']="oui";
         //retour vers la page d'entrée du site
         header("location:index.php"); 
+        exit;
     }
     //On libère le jeu d'enregistrement
     $res->closeCursor();
