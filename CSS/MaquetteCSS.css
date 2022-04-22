@@ -1,4 +1,4 @@
-body{background-color: palegreen}
+body{background-color: palegreen;}
 
 #en_tete{
     text-align: center;
@@ -18,6 +18,7 @@ body{background-color: palegreen}
     border: 1px solid black;
     border-style: dotted;
     border-radius: 20px;
+    margin-top : 20px;  
     margin-left: 220px;
     margin-right: 220px;
     
@@ -30,6 +31,7 @@ body{background-color: palegreen}
     border: 1px solid black;
     border-style: dotted;
     border-radius: 20px;
+    margin-bottom:20px;
     margin-left: 220px;
     margin-right: 220px;
 }
@@ -54,6 +56,8 @@ body{background-color: palegreen}
     border: 1px  solid black;
     border-style: dotted;
     border-radius:20px;
+    margin-top:20px;
+    margin-bottom:20px;
     margin-left: 220px;
     margin-right: 220px;
 }
@@ -83,7 +87,7 @@ body{background-color: palegreen}
     border: 1px solid black;
     border-style: dotted; 
     border-radius: 20px;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 250px;
     margin-right: 220px;
 }
@@ -97,8 +101,17 @@ body{background-color: palegreen}
     border-radius: 20px;
     margin-left:250px; 
     margin-right:220px;
+    margin-bottom: 20px;
 }
 
+#question
+{
+    text-align: center;
+    font-family: Alef;
+    background-color: rgb(200, 225, 200);
+    border-style: dotted;  
+    margin-bottom: 20px;
+}
 @font-face {
     font-family: "Zelda";
     src: url(../font/Zelda.otf);

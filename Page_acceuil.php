@@ -29,7 +29,7 @@
            <a href="Page_PRACTICIEN.html">Praticien</a>
             <br>
             <br>
-            <a href="Page_VISITEUR.html">Autres Visiteurs</a>
+            <a href="Page_VISITEUR.php">FAQ</a>
             <br>
             <br>
         </div>

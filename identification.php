@@ -5,7 +5,7 @@
 
     //On récupère les données saisies dans le formulaire 
     $nomSaisi = $_POST["nom"];
-    $motPasseSaisi = $_POST["mdp"];
+    $motPasseSaisi = $_POST["motDePasse"];
 
     //On récupère dans la base de données le mot de passe qui correspond au nom saisi par le visiteur 
     $reqSQL ="SELECT motDePasse FROM utilisateur WHERE nom = '$nomSaisi'";
