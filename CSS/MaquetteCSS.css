@@ -109,7 +109,9 @@ body{background-color: palegreen;}
     text-align: center;
     font-family: Alef;
     background-color: rgb(200, 225, 200);
-    border-style: dotted;  
+    border-style: dotted;
+    border-width: 1px;
+    margin-top:20px;
     margin-bottom: 20px;
 }
 @font-face {
