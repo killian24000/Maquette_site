@@ -7,6 +7,33 @@
     <title>Document</title>
 </head>
 <body>
+    <div style="position:fixed;">
+    <iframe src="Bandeau.html" frameborder="0" style="height: 100cm;"></iframe>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!--
     <div style="border: 5px; border-style: double; float: left;">
         <table>
@@ -92,14 +119,8 @@
             sjkcvzkehgvhkszgkvhg
         </div>
     </div>
-    -->
-    <style>
-        #default{
-            border: 5px solid; min-width: 200px;
-        }
-    </style>
 
-    <div style="background-color: aqua; position:fixed;" id="default">
+    <div style="background-color: aqua; position:fixed; border: 5px solid; min-width: 200px;" id="default">
         <p>
             <h2>Hello World</h2>
             <br>
@@ -246,5 +267,6 @@
         </div>
     </div>
     
+    -->
 </body>
 </html>
