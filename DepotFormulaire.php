@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="CSS/MaquetteCSS.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="CSS/MaquetteCSS.css">
+    <link rel="stylesheet" href="CSS/Banniere.CSS">
+    <link rel="stylesheet" href="CSS/MaquetteCSS.CSS">
     <!--Appelle du fichier contenant toutes les fonctions JavaScript-->
     <script src="JavaScript/function.js"></script>
 </head>
@@ -15,11 +14,11 @@
     <?php
     include('HautDePage.html');
     ?>
-    <div>
+    <div style="display: flex" id="CorpDePage">
         <?php
-        include('bandeau.html')
+        include('Raccourci.html')
         ?>
-        <div>
+        <div style="display:inline-table;">
             <div id="en_tete">
                 <h2>RAPPORTS DE VISITE</h2>
             </div>
@@ -170,6 +169,7 @@
                 </button>
             </div>
         </div>
+        <div id="ZoneRaccourci"></div>
     </div>
     <?php
     include('BasDePage.HTML')
