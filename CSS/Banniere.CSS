@@ -18,23 +18,10 @@ position: absolute;
 }
 
 #bas_de_page
-<<<<<<< Updated upstream
-{  
-background-color: rgb(0, 251, 117);
-text-align: center;
-
-}
-=======
 {
    
     background-color: rgb(0, 251, 117);
     text-align: center;
-}
-
-#raccourci{
-    position:fixed;
-    text-align: left;
-    min-width: 210px;
 }
 
 #entete{
@@ -54,4 +41,17 @@ text-align: center;
     border-style: dotted;
     border-radius: 20px;
 }
->>>>>>> Stashed changes
+
+
+#FigureRaccourci{
+    position: sticky;
+    top:5px;
+    margin: 0;            
+}
+#ZoneRaccourci{
+    border: 0px rgb(145, 255, 0);
+    border-style:double;
+    max-width: 5cm;
+    display:inline-table;
+    padding: 0%;
+}
