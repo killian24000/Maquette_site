@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <title>GLPI/page_d'acceuil</title>
         <link href="CSS/MaquetteCSS.css" rel="stylesheet">
-        <link href="CSS/Banniere.CSS" ref="stylesheet">
+        <link href="CSS/Banniere.CSS" rel="stylesheet">
     </head>
     <body>
         <?php
-        include("HautDePage.HTML")
+        include("HautDePage.html")
         ?>
         <!audio autoplay>
             <!source src="audio/Galeries_Balder_-_The_Legend_of_Zelda_Twilight_Princess_HD_OST.mp3" type="audio/mpeg">
@@ -16,7 +16,7 @@
         <div id="menu">
             <h3>Compte-rendu :</h3>
         <div class="sous-menu">
-            <a href="Depôt_formulaire.html">Nouveaux</a>
+            <a href="DepotFormulaire.php">Nouveaux</a>
             <br>
             <br>                        
         </div>      

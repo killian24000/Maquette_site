@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link a href="CSS/MaquetteCSS.css" rel="stylesheet">
-        <link href="CSS/Banniere.CSS" ref="stylesheet">
+        <link href="CSS/Banniere.CSS" rel="stylesheet">
         <title>GLPI/Visiteur</title>
     </head>
     <body>

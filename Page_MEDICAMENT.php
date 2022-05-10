@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="CSS/MaquetteCSS.css" rel="stylesheet">
-        <link href="CSS/Banniere.CSS" ref="stylesheet">
+        <link href="CSS/Banniere.CSS" rel="stylesheet">
     <title>GLPI/Médicament</title>
 </head>
     <body>
