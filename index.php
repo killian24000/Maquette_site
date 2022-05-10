@@ -11,7 +11,7 @@
         function verifChamps()
         {
             if(document.getElementById('nom').value==''
-            ||document.getElementById('mot').value=='')
+            ||document.getElementById('motDePasse').value=='')
             {
             alert("remplir tout les champs");
             return false;
@@ -24,12 +24,12 @@
     <?php
     include("HautDePage.HTML")
     ?>
-    <form action="identification.php" method="post" onsubmit="verifChamps()">
+    <form action="identification.php" method="post" onsubmit="return verifChamps()">
         <div id="mot_de_passe">
             <h3>Identifiant</h3>
-        <input type="text" name="nom">
+        <input type="text" name="nom" id="nom">
             <h3>Mot de Passe</h3>
-        <input type="password" name="motDePasse">
+        <input type="password" name="motDePasse" id="motDePasse">
         <br>
         <br>
         <button type="submit" name="valider" value="Valider">Valider</button>
