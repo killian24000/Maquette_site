@@ -5,8 +5,8 @@
     session_start();
 
     //On récupère les données saisies dans le formulaire 
-    $nomSaisi = $_POST["Identifiant"];
-    $motPasseSaisi = $_POST["MotDePasse"];
+    $nomSaisi = $_POST["nom"];
+    $motPasseSaisi = $_POST["motDePasse"];
 
     //On récupère dans la base de données le mot de passe qui correspond au nom saisi par le visiteur 
     $reqSQL ="SELECT MotDePasse FROM authentification WHERE Identifiant = '$nomSaisi'";
