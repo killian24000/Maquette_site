@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>GLPI/page_d'acceuil</title>
         <link href="CSS/MaquetteCSS.css" rel="stylesheet">
+        <link href="CSS/Banniere.CSS" ref="stylesheet">
     </head>
     <body>
         <?php

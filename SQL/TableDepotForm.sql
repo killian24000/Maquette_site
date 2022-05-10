@@ -35,7 +35,7 @@ CREATE TABLE Rapport(
 )
 
 CREATE TABLE Identification(
-    UtilisatuerID INTEGER,
+    UtilisateurID INTEGER,
     identifiant VARCHAR(20),
     MotDePasse VARCHAR(20),
 
