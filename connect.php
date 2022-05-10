@@ -2,7 +2,7 @@
 
     //définition de constantes pour la connexion MySQL
     define('SERVEUR', 'localhost');
-    define('BASE','login');
+    define('BASE','bddappwebgsb');
     define('NOM','root');
     define('MOTPASSE','');
 
