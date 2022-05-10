@@ -19,7 +19,7 @@
     if ($motPasseSaisi!==$motPasseBdd)
     // Le mot de passe est différent de celui de la base utilisateur 
     {
-        $message="Votre saisi est erroné, Recommencer SVP... ";
+        echo"Votre saisi est erroné, Recommencer SVP... ";
 
         //On inclu le formulaire d'identification (index.php)
         include('index.php');

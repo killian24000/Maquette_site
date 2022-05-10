@@ -12,6 +12,11 @@
         <?php
         include("HautDePage.HTML")
         ?>
+        <div style="display: flex" id="CorpDePage">
+            <?php
+            include('Raccourci.html')
+            ?>
+            <div>
             <div id="test">
                     <p>
                         <h2>PHARMACOPEE</h2> 
@@ -49,6 +54,10 @@
                             </p>                        
                 </div>
             </div>
+            </div>
+            <div id="ZoneRaccourci"></div>
+        </div>
+            
             
         </div>
         <?php

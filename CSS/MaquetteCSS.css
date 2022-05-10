@@ -7,8 +7,8 @@ body{background-color: palegreen;}
     border: 1px solid black;
     border-style: dotted;
     border-radius: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 220px;
+    margin-right: 220px;
 }
 
 #menu{
@@ -19,8 +19,8 @@ body{background-color: palegreen;}
     border-style: dotted;
     border-radius: 20px;
     margin-top : 20px;  
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 220px;
+    margin-right: 220px;
     
 }
 
