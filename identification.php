@@ -2,6 +2,7 @@
 
     //Appel du script de connexion au serveur et à la base de donnée 
     require("connect.php");
+    session_start();
 
     //On récupère les données saisies dans le formulaire 
     $nomSaisi = $_POST["Identifiant"];
@@ -15,10 +16,10 @@
 
     //On vérifie que le mot de passe saisi est identique à celui enregistrer dans la base de données
 
-    if ($motPasseSaisi!=$motPasseBdd)
+    if ($motPasseSaisi!==$motPasseBdd)
     // Le mot de passe est différent de celui de la base utilisateur 
     {
-        echo"Votre saisi est erroné, Recommencer SVP... ";
+        $message="Votre saisi est erroné, Recommencer SVP... ";
 
         //On inclu le formulaire d'identification (index.php)
         include('index.php');
