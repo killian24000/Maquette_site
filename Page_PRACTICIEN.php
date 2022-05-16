@@ -5,18 +5,18 @@
         <link href="CSS/MaquetteCSS.css" rel="stylesheet">
             <link href="CSS/Banniere.CSS" rel="stylesheet">
         <title>GLPI/Practicien</title>
-    <?php
-    //Appel du script de connexion 
-    require('connect.php');
-    ?>
-    </head>
-    <body>
-    <?php
-    include("HautDePage.HTML")
-    ?>
-    <div id="titre">
+<?php
+//Appel du script de connexion 
+require('connect.php');
+?>
+</head>
+<body>
+<?php
+include("HautDePage.HTML")
+?>
+ <div id="titre">
     <h1>Praticien</h1>
-    <form name="lstDeroulante">
+    <form name="lstDeroulante" action="PRATICIEN.php" method="post">
     <?php
         $reqSQL="SELECT mednom FROM medecin";
         $result=$connexion->query($reqSQL);
@@ -49,14 +49,14 @@
         ?>
     </select>
         <br>
-            <br>
-                <button type="submit" name="Valider" value="Valider">Rechercher</button>               
-                <br>
-                <br>
-            </form>
-        </div>
-    <?php
-    include("BasDePage.HTML")
-    ?>    
+        <br>
+        <button type="submit" name="Valider" value="Valider">Rechercher</button>               
+        <br>
+        <br>
+        </form>
+    </div>
+<?php
+include("BasDePage.HTML")
+?>    
 </body>
 </html>
