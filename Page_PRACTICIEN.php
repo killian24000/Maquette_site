@@ -16,14 +16,7 @@
     ?>
     <div id="titre">
     <h1>Praticien</h1>
-    <form name="ListeRecherche">
-        <select name="LstPraticien" class="titre">
-            <option>Choisissez un praticien</option>
-            <option value="1">Dupont</option>
-            <option value="2">Gosselin</option>
-            <option value="3">Delacoure</option>
-        </select>    
-    </form>
+    <form name="lstDeroulante">
     <?php
     $reqSQL="SELECT mednom FROM medecin";
     $result=$connexion->query($reqSQL);
@@ -35,7 +28,7 @@
     ?>
     <select name="Valider">
         <?php
-        $reqSQL="SELECT mednom FROM classe";
+        $reqSQL="SELECT MedNom FROM medecin";
         //Exécute la requête
         $result=$connexion->query($reqSQL);
         //Lecture de la 1re ligne du jeu d'enregistrements
@@ -50,14 +43,17 @@
             $ville=$ligne["MedVille"]; //ville du praticien
             $CP=$ligne["MedCP"]; //Code postal du praticien
             //On génère une ligne dans la liste déroulante 
-            echo"<option value='$_POST'>$_POST</option>";
+            echo"<option value='$nom'>$nom</option>";
             $ligne=$result->fetch();
         }
         ?>
     </select>
     <br>
+    <br>
     <button type="submit" name="Valider" value="Valider">Rechercher</button>
-    <ul>
+    <br>
+    <br>
+    </form>
     </div>
     <?php
     include("BasDePage.HTML")
