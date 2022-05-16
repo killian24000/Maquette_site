@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="CSS/Banniere.CSS">
-    <link rel="stylesheet" href="CSS/MaquetteCSS.CSS">
     <link rel="stylesheet" href="CSS/Formulaire.CSS">
     <!--Appelle du fichier contenant toutes les fonctions JavaScript-->
     <script src="JavaScript/function.js"></script>
@@ -30,7 +29,7 @@
                             Numéro de rapport
                         </td>
                         <td>
-                            <input type="text">
+                            <input type="text" id="RapportID" class="bouton">
                         </td>
                     </tr>
                     <tr>
@@ -41,7 +40,7 @@
                             <!--
                             Slct_Practitient : Selection de practition
                             <select> : Liste déroulante-->
-                            <select name="NomPractitien" id="Slct_Practitient">
+                            <select name="NomPractitien" id="Slct_Practitient" class="bouton">
                                 <option value="">Choisire un Practitien</option>
                                 <!-- lier a la base de donne pour reccupérer les nom -->
                             </select>
@@ -53,7 +52,7 @@
                             Coeficient
                         </td>
                         <td>
-                            <input type="number" name="Coef" id="Coef">
+                            <input type="number" name="Coef" id="Coef" class="bouton">
                         </td>
                     </tr>
                     <tr>
@@ -64,7 +63,7 @@
                             <script>
                                 //Pour que input type=date soit par defaut sur la date du jour il faut utiliser du javascript ou php
                                 //Utilisattion de la fonction DateDuJour() pour récuppérer et convertir au bon format la date
-                                document.write('<input type="date" name="des" id="des" value="'+DateDuJour()+'" min="'+DateDuJour()+'">');
+                                document.write('<input type="date" name="des" id="des" class="bouton" value="'+DateDuJour()+'" min="'+DateDuJour()+'">');
                             </script>
                         </td>
                     </tr>
@@ -73,7 +72,7 @@
                             Motif de la visite
                         </td>
                         <td>
-                            <select name="TypeMotif" id="Slct_Motif">
+                            <select name="TypeMotif" id="Slct_Motif" class="bouton">
                                 <option value="PRD">Périodicité</option>
                                 <option value="ACT">Actualisation</option>
                                 <option value="REL">Relance</option>
@@ -89,7 +88,7 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <textarea name="" id="" cols="30" rows="10" maxlength="1000" min-height:10px></textarea>
+                            <textarea name="" id="" cols="30" rows="10" maxlength="1000"></textarea>
                         </td>
                     </tr>
                 </table>
@@ -104,7 +103,7 @@
                             Produit 1 :
                         </td>
                         <td>
-                            <select name="Prod1" id="Slct_Prod1">
+                            <select name="Prod1" id="Slct_Prod1" class="bouton">
                                 <option value=""></option>
                             </select>
                         </td>
@@ -114,7 +113,7 @@
                             Produit 2 :
                         </td>
                         <td>
-                            <select name="Prod2" id="Slct_Prod2">
+                            <select name="Prod2" id="Slct_Prod2" class="bouton">
                                 <option value=""></option>
                             </select>
                         </td>
@@ -124,7 +123,7 @@
                             Documentation :
                         </td>
                         <td>
-                            <input type="checkbox" name="CheckDoc" id="Cbx_Doc">
+                            <input type="checkbox" name="CheckDoc" id="Cbx_Doc" class="bouton">
                         </td>
                     </tr>
                 </table>
@@ -142,12 +141,10 @@
                             Echantillons 1 :
                         </td>
                         <td>
-                            <select name="ListeEchantillons1" type="Slct_Echantillons1" style="width: 2cm;">
+                            <select name="ListeEchantillons1" class="bouton" type="Slct_Echantillons1">
                                 <option value=""></option>
                             </select>
-                        </td>
-                        <td>
-                            <input type="number" name="NbEchantillons1" id="NbEnchantillons1" style="width: 50px;">
+                            <input type="number" name="NbEchantillons1" id="NbEnchantillons1">
                         </td>
                     </tr>
                     <tr>
@@ -155,12 +152,12 @@
                             Saisie définitive : 
                         </td>
                         <td>
-                            <input type="checkbox" name="CheckDefinitif" id="Cbx_Definitif">
+                            <input type="checkbox" name="CheckDefinitif" id="Cbx_Definitif" class="bouton">
                         </td>
                     </tr>
                 </table>
             </div>
-            <div id="BoutonEdition" style="padding-top: 10px; padding-bottom: 10px;">
+            <div id="BoutonEdition">
                 <button>
                     Précédant
                 </button>

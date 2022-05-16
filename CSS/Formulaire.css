@@ -1,12 +1,15 @@
+body{background-color: palegreen;}
+
 #TitreSection{
     text-align: center;
     font-family: Alef;
-    /*background-color: rgb(200, 225, 200);*/
     background-color: rgb(42, 87, 42);
     color: white;
     border: 1px solid black;
     border-style: dotted;
     border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 #CorpSection{
@@ -17,6 +20,8 @@
     border-style: dotted;
     border-radius: 20px;
     margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 #BoutonEdition{
@@ -41,5 +46,22 @@ td{
 
 textarea{
     resize: vertical;
+    width: 75%;
+    overflow: hidden;
+    height: auto;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    min-height: 250px;
+
+}
+
+.bouton{
+    width: 50%;
+    text-align: center;
+}
+
+#NbEnchantillons1{
+    width: 10%;
 }
 
