@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="CSS/Banniere.CSS">
     <link rel="stylesheet" href="CSS/MaquetteCSS.CSS">
+    <link rel="stylesheet" href="CSS/Formulaire.CSS">
     <!--Appelle du fichier contenant toutes les fonctions JavaScript-->
     <script src="JavaScript/function.js"></script>
 </head>
@@ -19,11 +20,11 @@
         include('Raccourci.html')
         ?>
         <div style="display:inline-table;">
-            <div id="en_tete">
+            <div id="TitreSection">
                 <h2>RAPPORTS DE VISITE</h2>
             </div>
-            <div id="menu">
-                <table style="margin: auto;">
+            <div id="CorpSection">
+                <table>
                     <tr>
                         <td>
                             Numéro de rapport
@@ -82,20 +83,22 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td colspan="2">
                             Bilan
                         </td>
-                        <td>
-                            <textarea name="" id="" cols="30" rows="10" maxlength="1000"></textarea>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <textarea name="" id="" cols="30" rows="10" maxlength="1000" min-height:10px></textarea>
                         </td>
                     </tr>
                 </table>
             </div>
-            <div id="en_tete">
+            <div id="TitreSection">
                 <h2>ELEMENT PRESENTES</h2>
             </div>
-            <div id="menu">
-                <table style="margin: auto;">
+            <div id="CorpSection">
+                <table>
                     <tr>
                         <td>
                             Produit 1 :
@@ -126,13 +129,13 @@
                     </tr>
                 </table>
             </div>
-            <div id="en_tete">
+            <div id="TitreSection">
                 <h2>
                     ENCHANTILLONS
                 </h2>
             </div>
-            <div id="menu">
-                <table style="margin: auto;">
+            <div id="CorpSection">
+                <table>
                     <tr>
                         <!--Rendre l'affichage des echantillons dynamic en fonctionde si le medecin est nouveau ou non-->
                         <td>
@@ -157,7 +160,7 @@
                     </tr>
                 </table>
             </div>
-            <div id="pied_de_page" style="padding-top: 10px; padding-bottom: 10px;">
+            <div id="BoutonEdition" style="padding-top: 10px; padding-bottom: 10px;">
                 <button>
                     Précédant
                 </button>
