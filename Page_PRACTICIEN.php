@@ -25,7 +25,7 @@
         </select>    
     </form>
     <?php
-    $reqSQL="SELECT mednom FROM medecin"
+    $reqSQL="SELECT mednom FROM medecin";
     $result=$connexion->query($reqSQL);
     $ligne=$result->fetch();
     while($ligne!=false)
