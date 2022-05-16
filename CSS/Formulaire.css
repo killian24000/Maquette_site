@@ -1,0 +1,41 @@
+#TitreSection{
+    text-align: center;
+    font-family: Alef;
+    /*background-color: rgb(200, 225, 200);*/
+    background-color: rgb(42, 87, 42);
+    color: white;
+    border: 1px solid black;
+    border-style: dotted;
+    border-radius: 20px;
+}
+
+#CorpSection{
+    text-align: center;
+    font-family: Alef;
+    background-color: rgb(200, 225, 200);
+    border: 1px solid black;
+    border-style: dotted;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+#BoutonEdition{
+    text-align: center;
+    font-family: Alef;
+    background-color: rgb(200, 225, 200);
+    border: 1px solid black;
+    border-style: dotted;
+    border-radius: 20px;
+}
+
+table{
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+textarea{
+    resize: vertical;
+    min-width: 50%;
+}
+
