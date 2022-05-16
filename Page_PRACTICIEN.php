@@ -5,26 +5,26 @@
         <link href="CSS/MaquetteCSS.css" rel="stylesheet">
             <link href="CSS/Banniere.CSS" rel="stylesheet">
         <title>GLPI/Practicien</title>
+    <?php
+    //Appel du script de connexion 
+    require('connect.php');
+    ?>
     </head>
     <body>
     <?php
     include("HautDePage.HTML")
     ?>
-    <?php
-    //Appel du script de connexion 
-    require('connect.php');
-    ?>
     <div id="titre">
     <h1>Praticien</h1>
     <form name="lstDeroulante">
     <?php
-    $reqSQL="SELECT mednom FROM medecin";
-    $result=$connexion->query($reqSQL);
-    $ligne=$result->fetch();
-    while($ligne!=false)
-    {
-       $ligne = $result->fetch(); 
-    }
+        $reqSQL="SELECT mednom FROM medecin";
+        $result=$connexion->query($reqSQL);
+        $ligne=$result->fetch();
+        while($ligne!=false)
+        {
+            $ligne = $result->fetch(); 
+        }
     ?>
     <select name="Valider">
         <?php
@@ -35,7 +35,7 @@
         $ligne=$result->fetch();
         //Tant qu'on n'a pas atteint la fin du jeu d'enregistrements,on boucle
         while($ligne!=false)
-        {   //On stock les données de la classe dans des variables
+        {   //On stock les données du praticien dans des variables
             $code=$ligne["MedCode"]; //code du praticien
             $nom=$ligne["MedNom"];  //Nom du praticien
             $prenom=$ligne["MedPrenom"]; //Prenom du praticien
@@ -48,13 +48,13 @@
         }
         ?>
     </select>
-    <br>
-    <br>
-    <button type="submit" name="Valider" value="Valider">Rechercher</button>
-    <br>
-    <br>
-    </form>
-    </div>
+        <br>
+            <br>
+                <button type="submit" name="Valider" value="Valider">Rechercher</button>               
+                <br>
+                <br>
+            </form>
+        </div>
     <?php
     include("BasDePage.HTML")
     ?>    
