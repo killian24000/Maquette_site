@@ -114,6 +114,11 @@ body{background-color: palegreen;}
     margin-top:20px;
     margin-bottom: 20px;
 }
+
+#Titre
+{
+    text-align: center;
+}
 @font-face {
     font-family: "Zelda";
     src: url(../font/Zelda.otf);

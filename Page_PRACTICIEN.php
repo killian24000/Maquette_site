@@ -10,13 +10,14 @@
     <?php
     include("HautDePage.HTML")
     ?>
+    <div id="Titre">
     <h1>Praticien</h1>
     <form name="ListeRecherche">
         <select name="LstPraticien" class="titre">
             <option>Choisissez un praticien</option>
-
+    </div>
     <?php
     include("BasDePage.HTML")
-    ?>
-    </body>
+    ?>    
+</body>
 </html>
