@@ -32,10 +32,14 @@ table{
     margin: auto;
     padding-top: 10px;
     padding-bottom: 10px;
+    width:1000px;
+}
+
+td{
+    width: 50%;
 }
 
 textarea{
     resize: vertical;
-    min-width: 50%;
 }
 
