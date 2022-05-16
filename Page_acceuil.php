@@ -27,7 +27,7 @@
             <a href="Page_MEDICAMENT.php">Médicaments</a>
             <br>
             <br>
-           <a href="Page_PRACTICIEN.html">Praticien</a>
+           <a href="Page_PRACTICIEN.php">Praticien</a>
             <br>
             <br>
             <a href="Page_VISITEUR.php">FAQ</a>
