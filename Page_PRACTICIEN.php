@@ -5,6 +5,11 @@
         <title>GLPI/Practicien</title>
     </head>
     <body>
-     Bourpy 
+    <?php
+    include("HautDePage.HTML")
+    ?>
+     <h1>Praticien</h1>
+
+
     </body>
 </html>
