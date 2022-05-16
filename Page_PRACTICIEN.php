@@ -15,6 +15,7 @@
     <form name="ListeRecherche">
         <select name="LstPraticien" class="titre">
             <option>Choisissez un praticien</option>
+    </form>
     </div>
     <?php
     include("BasDePage.HTML")
