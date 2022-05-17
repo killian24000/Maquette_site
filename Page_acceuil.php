@@ -2,7 +2,7 @@
 <HTML>
     <head>
         <meta charset="utf-8">
-        <title>GLPI/page_d'acceuil</title>
+        <title>GSB/page_d'acceuil</title>
         <link href="CSS/MaquetteCSS.css" rel="stylesheet">
         <link href="CSS/Banniere.CSS" rel="stylesheet">
     </head>
