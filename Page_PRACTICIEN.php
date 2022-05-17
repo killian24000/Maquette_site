@@ -16,19 +16,13 @@ include("HautDePage.HTML")
 ?>
  <div id="titre">
     <h1>Praticien</h1>
-    <form name="lstDeroulante" action="PRATICIEN.php" method="post">
+    <form name="lstDeroulante" action="PRATICIEN.php" method="POST">
     <?php
-        $reqSQL="SELECT mednom FROM medecin";
-        $result=$connexion->query($reqSQL);
-        $ligne=$result->fetch();
-        while($ligne!=false)
-        {
-            $ligne = $result->fetch(); 
-        }
     ?>
     <select name="Valider">
+    <option value="*">---Choisir un praticien---</option>
         <?php
-        $reqSQL="SELECT MedNom FROM medecin";
+        $reqSQL="SELECT * FROM medecin";
         //Exécute la requête
         $result=$connexion->query($reqSQL);
         //Lecture de la 1re ligne du jeu d'enregistrements
@@ -36,21 +30,20 @@ include("HautDePage.HTML")
         //Tant qu'on n'a pas atteint la fin du jeu d'enregistrements,on boucle
         while($ligne!=false)
         {   //On stock les données du praticien dans des variables
+            $i+=1;
             $code=$ligne["MedCode"]; //code du praticien
             $nom=$ligne["MedNom"];  //Nom du praticien
-            $prenom=$ligne["MedPrenom"]; //Prenom du praticien
-            $adresse=$ligne["MedAdresse"]; //adresse du praticien
-            $ville=$ligne["MedVille"]; //ville du praticien
-            $CP=$ligne["MedCP"]; //Code postal du praticien
+            $prenom=$ligne["MedPrenom"];  //Prenom du praticien
             //On génère une ligne dans la liste déroulante 
-            echo"<option value='$nom'>$nom</option>";
+            echo("<option value=".$code.">$nom $prenom</option>");
+            //Lecture de la ligne suivante dans le jeu d'enregistrement
             $ligne=$result->fetch();
         }
         ?>
     </select>
         <br>
         <br>
-        <button type="submit" name="Valider" value="Valider">Rechercher</button>               
+        <button type="submit">Rechercher</button>               
         <br>
         <br>
         </form>
