@@ -7,6 +7,19 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>
+        <?php
+        if(isset($_POST["Titre"])){
+            echo($_POST["Titre"]);
+        }else{
+            echo("Vide");
+        }
+        ?>
+    </h1>
+    <form action="test5A.php" method="post">
+        <input type="text" name="Titre">
+        <button type="submit">Valider</button>
+    </form>
     <form action="test5.php" method="post">
         <select name="liste" id="listeID">
         <?php
