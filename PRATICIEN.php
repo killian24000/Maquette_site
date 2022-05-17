@@ -17,7 +17,7 @@
       <?php
         include('Raccourci.html')
       ?>
-      <div>
+      <div id=CDPCentre>
         <div id="PraticienTitre">
           <h1>PRATICIEN</h1>
         </div>
