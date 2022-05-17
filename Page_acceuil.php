@@ -36,7 +36,7 @@
            <a href="Page_PRACTICIEN.php">Praticien</a>
             <br>
             <br>
-            <a href="Page_VISITEUR.php">FAQ</a>
+            <a href="FAQ.php">FAQ</a>
             <br>
             <br>
         </div>
