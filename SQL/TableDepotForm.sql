@@ -8,7 +8,13 @@ CREATE TABLE Visiteur(
     VisPrenom VARCHAR(20),
     VisAdresse VARCHAR(20),
     VisVille VARCHAR(20),
-    VisCP INTEGER
+    VisCP INTEGER,
+    VisAdresseComplement VARCHAR(50),
+    VisCoordonnee INTEGER,
+    VisDateDemboche DATE,
+    VisSalaire INTEGER,
+    VisMoyVenteProduit FLOAT,
+
 );
 
 CREATE TABLE Medecin(
@@ -17,15 +23,37 @@ CREATE TABLE Medecin(
     MedPrenom VARCHAR(20),
     MedAdresse VARCHAR(20),
     MedVille VARCHAR(20),
-    MedCP INTEGER
+    MedCP INTEGER,
+    MedAdresseComplement VARCHAR(50)
+    MedCoordonnee INTEGER,
+    MedFonction VARCHAR(20),
+    MedAssocierA VARCHAR(50),
+    MedDescription VARCHAR(200),
+    MedCoefDeNotoriété INTEGER,
+    MedCoefDeConfience INTEGER,
+    MedFormation VARCHAR(20),
+    MedMoyPatientele FLOAT,
+    MedNouveau VARCHAR(5),
+
 );
 
-CREATE TABLE Rapport(
-    RapportID INTEGER,
-    RapportVersion INTEGER CHECK (RapportVersion<=3 OR RapportDefinitif=FALSE),
-    RapportDefinitif BOOLEAN,
+CREATE TABLE MedecinHoraire{
     MedID INTEGER,
-    CoefDeFiabiliter FLOAT CHECK (CoefDeFiabiliter<=100 or CoefDeFiabiliter>=0),
+    Lun VARCHAR(40),
+    Mar VARCHAR(40),
+    Mer VARCHAR(40),
+    Jeu VARCHAR(40),
+    Ven VARCHAR(40),
+    Sam VARCHAR(40)
+}
+
+CREATE TABLE Rapport(
+    UtilisateurID INTEGER,
+    RapportID INTEGER,
+    RapportVersion INTEGER,
+    RapportDefinitif VARCHAR(5),
+    MedID INTEGER,
+    CoefDeFiabiliter FLOAT,
     RapportDate DATE,
     DebutRedaction DATETIME,  
     FinRedacttion DATETIME,
@@ -33,7 +61,7 @@ CREATE TABLE Rapport(
     Rapport VARCHAR(1000),
     ProduitID1 INTEGER,
     ProduitID2 INTEGER,
-    DocFournit BOOLEAN,
+    DocFournit VARCHAR(5),
     LesEchantillons VARCHAR(1000)
 );
 
