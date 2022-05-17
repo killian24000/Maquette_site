@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <link href="CSS/MaquetteCSS.css" rel="stylesheet">
             <link href="CSS/Banniere.CSS" rel="stylesheet">
-        <title>GLPI/Practicien</title>
+        <title>GSB/Praticien</title>
 <?php
 //Appel du script de connexion 
 require('connect.php');
