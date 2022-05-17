@@ -17,7 +17,7 @@
             include('Raccourci.html')
             ?>
             <div>
-            <div id="test">
+            <div id="Test">
                     <p>
                         <h2>PHARMACOPEE</h2> 
                     </p>
