@@ -27,6 +27,7 @@ body{background-color: palegreen;}
 #CDPCentre{
     margin-left: 10px;
     margin-right: 10px;
+    width: 60%;
 }
 
 #BoutonEdition{
@@ -44,11 +45,6 @@ table{
     margin: auto;
     padding-top: 10px;
     padding-bottom: 10px;
-    width:1000px;
-}
-
-td{
-    width: 50%;
 }
 
 textarea{
@@ -61,6 +57,10 @@ textarea{
     padding-bottom: 5px;
     min-height: 250px;
 
+}
+
+td{
+    width: 1000px;
 }
 
 .bouton{
