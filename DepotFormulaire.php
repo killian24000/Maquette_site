@@ -18,7 +18,7 @@
         <?php
         include('Raccourci.html')
         ?>
-        <div style="display:inline-table;">
+        <div style="display:inline-table;" id="CDPCentre">
             <div id="TitreSection">
                 <h2>RAPPORTS DE VISITE</h2>
             </div>

@@ -10,8 +10,6 @@ body{background-color: palegreen;}
     border-radius: 20px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 #CorpSection{
@@ -22,10 +20,13 @@ body{background-color: palegreen;}
     border-style: dotted;
     border-radius: 20px;
     margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+}
+
+#CDPCentre{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #BoutonEdition{
