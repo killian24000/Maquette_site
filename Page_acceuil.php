@@ -10,9 +10,6 @@
         <?php
         include("HautDePage.html")
         ?>
-        <!audio autoplay>
-            <!source src="audio/Galeries_Balder_-_The_Legend_of_Zelda_Twilight_Princess_HD_OST.mp3" type="audio/mpeg">
-        <!/audio> 
          <div id="Cpt-rendu">
             <h3>Compte-rendu</h3>
             </div>
@@ -36,7 +33,7 @@
            <a href="Page_PRACTICIEN.php">Praticien</a>
             <br>
             <br>
-            <a href="Page_VISITEUR.php">FAQ</a>
+            <a href="FAQ.php">FAQ</a>
             <br>
             <br>
         </div>
