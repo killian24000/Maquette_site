@@ -18,22 +18,55 @@ body{background-color: palegreen;}
     border: 1px solid black;
     border-style: dotted;
     border-radius: 20px;
-    margin-top : 20px;  
-    margin-left: 220px;
-    margin-right: 220px;
+    margin-top : 0%;  
+    margin-bottom: 2%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#Cpt-rendu
+{
+    text-align: center;
+    font-family: Alef;
+    background-color: rgb(42, 87, 42);
+    border-style: dotted;
+    border-radius: 20px;
+    border-width: 1px;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    color:white;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#Consulter{
+    color:white;
+    text-align: center;
+    font-family: Alef;
+    background-color: rgb(42, 87, 42);
+    border: 1px solid black;
+    border-style: dotted;
+    border-radius: 20px;
+    margin-top:2%;
+    margin-bottom:0%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     
 }
 
-#Menu2{
+#Menu2
+{
     text-align: center;
     font-family: Alef;
     background-color: rgb(200, 225, 200);
     border: 1px solid black;
     border-style: dotted;
     border-radius: 20px;
-    margin-bottom:20px;
-    margin-left: 220px;
-    margin-right: 220px;
+    margin-top:0%;
+    margin-bottom:2%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    
 }
 
 #pied_de_page
