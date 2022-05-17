@@ -14,11 +14,14 @@ require('connect.php');
 <?php
 include("HautDePage.HTML")
 ?>
- <div id="titre">
-    <h1>Praticien</h1>
+<div id="PraticienBis">
+<h1>Praticien</h1>
+</div>
+ <div id="titre"> 
     <form name="lstDeroulante" action="PRATICIEN.php" method="POST">
     <?php
     ?>
+    <br>
     <select name="Valider">
     <option value="*">---Choisir un praticien---</option>
         <?php
