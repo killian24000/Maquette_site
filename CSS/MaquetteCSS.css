@@ -97,7 +97,19 @@ body{background-color: palegreen;}
 
 #logo
 {
-    text-align: center;
+    width: 40%;
+    display:inline-flex;
+    max-width:100%;
+    max-height: 300%; 
+}   
+
+#haut_de_page
+{
+    margin-top:auto;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    
+    
 }
 
 #inscription
@@ -155,10 +167,27 @@ body{background-color: palegreen;}
     background-color: rgb(200, 225, 200);
     border-style: dotted;
     border-width: 1px;
-    margin-top:20px;
-    margin-bottom: 20px;
+    border-radius: 20px;
+    margin-top:0%;
+    margin-bottom:2%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
+#PraticienBis
+{
+    text-align: center;
+    color:white;
+    font-family: Alef;
+    background-color: rgb(42, 87, 42);
+    border-style: dotted;
+    border-radius: 20px;
+    border-width: 1px;
+    margin-top: 2%;
+    margin-bottom: 0%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
 #Praticien
 {
     text-align: center;

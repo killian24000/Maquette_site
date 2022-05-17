@@ -36,9 +36,6 @@
         <button type="reset" name="annulation" value="Annuler">Annuler</button>
         <br>
         <br>
-        <p> 
-          Vous êtes un nouvel utilisateur vous devez remplir le <a href="formulaire inscription.html">formulaire d'inscription</a>      
-        </p>
         </div>
     </form>
     <?php
