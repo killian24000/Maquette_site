@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="CSS/Banniere.CSS">
     <link rel="stylesheet" href="CSS/Formulaire.CSS">
+    <link rel="stylesheet" href="CSS/MaquetteCSS.CSS">
     <!--Appelle du fichier contenant toutes les fonctions JavaScript-->
     <script src="JavaScript/function.js"></script>
 </head>
