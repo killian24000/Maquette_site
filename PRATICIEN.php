@@ -19,7 +19,7 @@
       ?>
       <div id=CDPCentre>
         <div id="PraticienTitre">
-          <h1>PRATICIEN</h1>
+          <h2>PRATICIEN</h2>
         </div>
         <div id="Praticien">
           <?php
