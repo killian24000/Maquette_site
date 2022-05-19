@@ -136,18 +136,22 @@
             </div>
             <div id="CorpSection">
                 <table>
-                    <tr>
-                        <!--Rendre l'affichage des echantillons dynamic en fonctionde si le medecin est nouveau ou non-->
-                        <td>
-                            Echantillons 1 :
-                        </td>
-                        <td>
-                            <select name="ListeEchantillons1" class="bouton" type="Slct_Echantillons1">
-                                <option value=""></option>
-                            </select>
-                            <input type="number" name="NbEchantillons1" id="NbEnchantillons1">
-                        </td>
-                    </tr>
+                    <?php
+                    for($i=1; $i<11; $i++){
+                        echo('
+                            <tr>
+                                <td>Echantillons '.$i.' :</td>
+                                <td>
+                                    <select name="ListeEchantillons'.$i.'" class="bouton" type="Slct_Echantillons'.$i.'">
+                                        <option value="">Rien</option>
+                                        <option value="">Prod1</option>
+                                    </select>
+                                    <input type="number" name="NbForEchantillons'.$i.'" class="NbEnchantillons" min=0 max=10>
+                                </td>
+                            </tr>
+                        ');
+                    }
+                    ?>
                     <tr>
                         <td>
                             Saisie définitive : 
