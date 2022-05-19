@@ -7,7 +7,8 @@
     <link href="CSS/MaquetteCSS.css" rel="stylesheet">
     <link href="CSS/Banniere.CSS" rel="stylesheet">
     <link href="CSS/Formulaire.css" rel="stylesheet">
-    <title>GSB/Médicament</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="Image/Logo-gsb2.0.png">
+    <title>GSB | Medicament</title>
 </head>
     <body>
     <?php
@@ -41,10 +42,9 @@
     
         //on ferme la connexion
         $connexion=null;
-
     }
     ?>
-    <form action="Page_MEDICAMENT.php" method="POST" onsubmit="test()">
+    <form action="Page_MEDICAMENT.php" method="post" onsubmit="test()">
     <div id="CDPCentre">
         <div id="Test245">
             <p>
@@ -64,21 +64,21 @@
                 </p>
                 COMPOSANT : 
                 <p>
-                <textarea name="" id="" cols="30" rows="10" maxlength="1000" name='$Composition'></textarea>
+                <textarea id="" cols="30" rows="10" maxlength="1000" name='$Composition'></textarea>
                 </p>
                 EFFETS :
                 <p>
-                <textarea name="" id="" cols="30" rows="10" maxlength="1000" name='$Effets'></textarea>
+                <textarea  id="" cols="30" rows="10" maxlength="1000" name='$Effets'></textarea>
                 </p>
                 CONTRE INDICATION :
                 <p>
-                <textarea name="" id="" cols="30" rows="10" maxlength="1000" name='$ContraIndication'></textarea>
+                <textarea  id="" cols="30" rows="10" maxlength="1000" name='$ContraIndication'></textarea>
                 </p>
                 PRIX ECHANTILLON : 
                 <p>
-                <textarea name="" id="" cols="30" rows="10" maxlength="1000" name='$Prix'></textarea>
+                <textarea id="" cols="30" rows="10" maxlength="1000" name='$Prix'></textarea>
                 </p>
-                <button type="submit">Ajouter</button>            
+                <button type="submit" name="Ajout" value="Ajouter">Ajouter</button>            
             </div>
         </div>
         <div id="ZoneRaccourci"></div>

@@ -7,7 +7,8 @@
   <link href="CSS/MaquetteCSS.css" rel="stylesheet">
   <link href="CSS/Banniere.CSS" rel="stylesheet">
   <link href="cSS/Formulaire.css" rel="stylesheet">
-  <title>GSB/PRATICIEN/RECHERCHE</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="Image/Logo-gsb2.0.png">
+  <title>GSB | PRATICIEN</title>
 </head>
 <body>
   <?php

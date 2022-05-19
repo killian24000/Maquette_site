@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <link a href="CSS/MaquetteCSS.css" rel="stylesheet">
         <link href="CSS/Banniere.CSS" rel="stylesheet">
-        <title>GLPI/Visiteur</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="Image/Logo-gsb2.0.png">
+        <title>GLPI | FAQ</title>
     </head>
     <body>
         <?php

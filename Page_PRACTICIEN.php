@@ -3,8 +3,9 @@
     <head>
         <meta charset="utf-8">
         <link href="CSS/MaquetteCSS.css" rel="stylesheet">
-            <link href="CSS/Banniere.CSS" rel="stylesheet">
-        <title>GSB/Praticien</title>
+        <link href="CSS/Banniere.CSS" rel="stylesheet">
+        <link rel="icon" type="image/png" sizes="16x16" href="Image/Logo-gsb2.0.png">
+        <title>GSB | PRATICIEN</title>
 <?php
 //Appel du script de connexion 
 require('connect.php');

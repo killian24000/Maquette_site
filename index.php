@@ -1,12 +1,16 @@
 <!DOCTYPE html>
+<?php
+    session_start();
+?>
 <html lang="en"> 
 <head>
+    <title>GSB | Connexion</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GLPI/login</title>
     <link href="CSS/MaquetteCSS.css" rel="stylesheet">
     <link href="CSS/Banniere.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="Image/Logo-gsb2.0.png">
     <script type="text/javascript">
         function verifChamps()
         {
@@ -18,7 +22,7 @@
             }
             return true;
         }
-    </script>
+    </script>  
 </head>
 <body>
     <?php
