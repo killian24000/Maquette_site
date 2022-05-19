@@ -13,7 +13,7 @@ CREATE TABLE Visiteur(
     VisCoordonnee INTEGER,
     VisDateDemboche DATE,
     VisSalaire INTEGER,
-    VisMoyVenteProduit FLOAT,
+    VisMoyVenteProduit FLOAT
 
 );
 
@@ -24,7 +24,7 @@ CREATE TABLE Medecin(
     MedAdresse VARCHAR(20),
     MedVille VARCHAR(20),
     MedCP INTEGER,
-    MedAdresseComplement VARCHAR(50)
+    MedAdresseComplement VARCHAR(50),
     MedCoordonnee INTEGER,
     MedFonction VARCHAR(20),
     MedAssocierA VARCHAR(50),
@@ -33,22 +33,22 @@ CREATE TABLE Medecin(
     MedCoefDeConfience INTEGER,
     MedFormation VARCHAR(20),
     MedMoyPatientele FLOAT,
-    MedNouveau VARCHAR(5),
+    MedNouveau VARCHAR(5)
 
 );
 
-CREATE TABLE MedecinHoraire{
-    MedID INTEGER,
+CREATE TABLE MedecinHoraire(
+    MedID INTEGER PRIMARY Key,
     Lun VARCHAR(40),
     Mar VARCHAR(40),
     Mer VARCHAR(40),
     Jeu VARCHAR(40),
     Ven VARCHAR(40),
     Sam VARCHAR(40)
-}
+);
 
 CREATE TABLE Rapport(
-    UtilisateurID INTEGER,
+    UtilisateurID INTEGER PRIMARY Key,
     RapportID INTEGER,
     RapportVersion INTEGER,
     RapportDefinitif VARCHAR(5),
@@ -66,7 +66,7 @@ CREATE TABLE Rapport(
 );
 
 CREATE TABLE Authentification(
-    UtilisateurID INTEGER,
+    UtilisateurID INTEGER PRIMARY Key,
     Identifiant VARCHAR(20),
     MotDePasse VARCHAR(20)
 
