@@ -11,6 +11,7 @@
     <title>GSB | Medicament</title>
 </head>
     <body>
+<<<<<<< Updated upstream
     <?php
     include("HautDePage.HTML")
     ?>
@@ -55,6 +56,15 @@
             <p>
             <h2>PHARMACOPEE</h2> 
             </p>
+=======
+        <?php
+        include('HautDePage.HTML');
+        ?>
+            <div id="test">
+                    <p>
+                        <h2>PHARMACOPEE</h2> 
+                    </p>
+>>>>>>> Stashed changes
                 </div>
                 <div id="medicament_corps">
                 <br>
@@ -90,6 +100,7 @@
 >>>>>>> e66d6da5dfd415b45e028022371a854203510fc4
             </div>
         </div>
+<<<<<<< Updated upstream
         <div id="ZoneRaccourci"></div>
         </div>
     </form>
@@ -98,5 +109,10 @@
     <?php
     include("BasDePage.HTML")
     ?>
+=======
+        <?php
+        include('BasDePage.HTML')
+        ?>
+>>>>>>> Stashed changes
     </body>
 </html>
