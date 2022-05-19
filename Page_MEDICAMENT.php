@@ -25,7 +25,7 @@
     //---------------------------------------------------------------------
 	// R�cup�rer les valeurs saisies dans le formulaire dans les variables
 	//---------------------------------------------------------------------
-    function test(){
+    if(isset($_POST["BouttonValider"])){
         $DepotLegal=$_POST["DepotLegal"];
         $NomCommercial=$_POST["NomCommercial"];
         $Famille=$_POST["Famille"];
@@ -42,6 +42,11 @@
     
         //on ferme la connexion
         $connexion=null;
+<<<<<<< HEAD
+=======
+    }else{
+        echo("null");
+>>>>>>> e66d6da5dfd415b45e028022371a854203510fc4
     }
     ?>
     <form action="Page_MEDICAMENT.php" method="post" onsubmit="test()">
@@ -78,7 +83,11 @@
                 <p>
                 <textarea id="" cols="30" rows="10" maxlength="1000" name='$Prix'></textarea>
                 </p>
+<<<<<<< HEAD
                 <button type="submit" name="Ajout" value="Ajouter">Ajouter</button>            
+=======
+                <button type="submit" name="BouttonValider">Ajouter</button>            
+>>>>>>> e66d6da5dfd415b45e028022371a854203510fc4
             </div>
         </div>
         <div id="ZoneRaccourci"></div>
