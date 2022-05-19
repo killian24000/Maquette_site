@@ -32,20 +32,15 @@
         $Effets=$_POST["Effets"];
         $ContreIndication=$_POST["ContreIndication"];
         $Prix=$_POST["Prix"];
-
-        $reqSQL='SELECT COUNT(*) FROM medicament WHERE MedicType = "AAA"';
-        echo("result : ");
-        $result->exec($reqSQL);
-        echo $result;
         //echo("<div>$DepotLegal"." | "."$NomCommercial"." | "."$Famille"." | "."$Composition"." | "."$Effets"." | "."$ContreIndication<div>");
         //On récupère dans des variables les données saisies par l'utilisateur
-        //$reqSQL="INSERT INTO medicament VALUES ('AAA','$DepotLegal','$NomCommercial','$Famille','$Composition','$Effets','$ContreIndication','$Prix')";
+        $reqSQL="INSERT INTO medicament VALUES ('AAA','$DepotLegal','$NomCommercial','$Famille','$Composition','$Effets','$ContreIndication','$Prix')";
         
         //Execution de la requête
-        //$connexion->exec($reqSQL) or die ("erreur dans la requête sql");
+        $connexion->exec($reqSQL) or die ("erreur dans la requête sql");
     
         //on ferme la connexion
-        //$connexion=null;
+        $connexion=null;
 
     }else{
         echo("null");
