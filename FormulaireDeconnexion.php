@@ -1,8 +1,13 @@
 <?php
-function deconnexion()
-{
-    auth()->logout();
+session_start();
+//Suppression des variables de session et de la session 
+$_SESSION = array();
+session_destroy();
 
-    return redirect('/');   
-}
+//Suppression des cookies de connexion automatique
+setcookie('login', '');
+setcookie('pass_hache','');
+
+header('location:"index.php?deco=1');
+
 ?> 
