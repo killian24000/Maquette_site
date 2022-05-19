@@ -124,40 +124,65 @@ body{background-color: palegreen;}
     margin-right: 220px;
 }
 
-#test
+#Test245
 {
     text-align: center;
     font-family: Alef;
-    background-color: rgb(200, 225, 200);
-    border: 1px solid black;
+    background-color: rgb(42, 87, 42);
+    border:1px solid black;
     border-style: dotted; 
+    color:white;
     border-radius: 20px;
-    margin-top: 20px;
-    margin-left: 250px;
-    margin-right: 220px;
+    margin-top: 2%;
+    margin-bottom: 0%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    
 }
+
 #medicament_corps
 {
     text-align: center;
     font-family: Alef;
-    background-color: rgb(200,225,200);
+    background-color: rgb(200, 225, 200);
     border: 1px solid black; 
     border-style: dotted;
     border-radius: 20px;
-    margin-left:250px; 
-    margin-right:220px;
-    margin-bottom: 20px;
+    margin-top: 0%; 
+    margin-bottom:2%;
+    justify-content: center;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
-#question
+#FAQ
 {
     text-align: center;
     font-family: Alef;
     background-color: rgb(200, 225, 200);
+    border-radius: 20px;
     border-style: dotted;
     border-width: 1px;
     margin-top:20px;
     margin-bottom: 20px;
+}
+
+#Q1
+{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.question
+{
+    text-align: center;
+    font-family: Alef;
+    background-color: rgb(42, 87, 42);
+    border-style: dotted;
+    border-width:1px;
+    color:white;
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
 
 #titre
