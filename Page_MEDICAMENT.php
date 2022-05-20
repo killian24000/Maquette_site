@@ -1,4 +1,15 @@
 <!DOCTYPE html>
+<?php
+//démarrer une session
+session_start();
+//test vérifiant la présence de la variable de session
+if($_SESSION['ok']!='oui')
+{
+    //redirection vers la page de démarrage du site(index.html)
+    if($_SESSION['ok']!='oui2')
+    header("location:index.php");
+}
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -38,15 +49,15 @@
         echo("result : ");
         $result->exec($reqSQL);
         echo $result;
-        //echo("<div>$DepotLegal"." | "."$NomCommercial"." | "."$Famille"." | "."$Composition"." | "."$Effets"." | "."$ContreIndication<div>");
+        echo("<div>$DepotLegal"." | "."$NomCommercial"." | "."$Famille"." | "."$Composition"." | "."$Effets"." | "."$ContreIndication<div>");
         //On récupère dans des variables les données saisies par l'utilisateur
-        //$reqSQL="INSERT INTO medicament VALUES ('AAA','$DepotLegal','$NomCommercial','$Famille','$Composition','$Effets','$ContreIndication','$Prix')";
+        $reqSQL="INSERT INTO medicament VALUES ('AAA','$DepotLegal','$NomCommercial','$Famille','$Composition','$Effets','$ContreIndication','$Prix')";
         
         //Execution de la requête
-        //$connexion->exec($reqSQL) or die ("erreur dans la requête sql");
+        $connexion->exec($reqSQL) or die ("erreur dans la requête sql");
     
         //on ferme la connexion
-        //$connexion=null;
+        $connexion=null;
         $connexion=null;
     }else{
         echo("null");

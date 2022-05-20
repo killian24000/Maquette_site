@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 <?php
+    //démarrer une session
+    session_start();
+    //test vérifiant la présence de la variable de session
+    if($_SESSION['ok']!='oui')
+    {
+        //redirection vers la page de démarrage du site(index.html)
+        if($_SESSION['ok']!='oui2')
+        header("location:index.php");
+    }
+?>
+<?php
     include("HautDePage.html");
 ?>
 <HTML>
@@ -43,7 +54,8 @@
             <br>
         </div>
         <?php
-        include("BasDePage.HTML")
+        include("BasDePage.HTML");
+        echo($_SESSION['ok']);
         ?>
     </body>
 </HTML>

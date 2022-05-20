@@ -3,13 +3,14 @@
     //Appel du script de connexion au serveur et à la base de donnée 
     require("connect.php");
     session_start();
+    $_SESSION['ok']='non';
 
     //On récupère les données saisies dans le formulaire 
     $nomSaisi = $_POST["nom"];
     $motPasseSaisi = $_POST["motDePasse"];
 
     //On récupère dans la base de données le mot de passe qui correspond au nom saisi par le visiteur 
-    $reqSQL="SELECT MotDePasse FROM authentification WHERE Identification ='$nomSaisi'";
+    $reqSQL="SELECT MotDePasse FROM authentification WHERE Identifiant ='$nomSaisi'";
     $res = $connexion->query($reqSQL);
     $ligne = $res->fetch();
     $motPasseBdd = $ligne['MotDePasse'];
@@ -31,7 +32,7 @@
         //démarrage d'une session 
         session_start();
         //Création d'une variable de session 
-        $_SESSION['ok']=true;
+        $_SESSION['ok']='oui';
         //retour vers la page d'entrée du site
         header("location:Page_acceuil.php"); 
     }
