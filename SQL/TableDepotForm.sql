@@ -74,7 +74,7 @@ CREATE TABLE Rapport(
     MedID INTEGER,
     Remplacent VARCHAR(5),
     CoefDeFiabiliter FLOAT,
-    RapportDate DATE,
+    RapportDate CHAR(10),
     DebutRedaction DATETIME,  
     FinRedacttion DATETIME,
     MotifVisite VARCHAR(20),
