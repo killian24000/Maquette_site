@@ -101,7 +101,7 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <textarea name="" id="" cols="30" rows="10" maxlength="1000"></textarea>
+                            <textarea name="TxtArBilan" cols="30" rows="10" maxlength="1000"></textarea>
                         </td>
                     </tr>
                 </table>

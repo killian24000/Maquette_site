@@ -1,15 +1,4 @@
 <!DOCTYPE html>
-<?php
-//démarrer une session
-session_start();
-//test vérifiant la présence de la variable de session
-if($_SESSION['ok']!='oui')
-{
-    //redirection vers la page de démarrage du site(index.html)
-    if($_SESSION['ok']!='oui2')
-    header("location:index.php");
-}
-?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,107 +10,107 @@ if($_SESSION['ok']!='oui')
     <link rel="icon" type="image/png" sizes="16x16" href="Image/Logo-gsb2.0.png">
     <title>GSB | Medicament</title>
 </head>
-    <body>
+<body>
+    <?php
+    include('connect.php');
+
+    if (isset($_POST["ValiderMedoc"])){
+        $
+    }
+    ?>
     <?php
     include("HautDePage.HTML")
     ?>
     <div style="display: flex" id="CorpDePage">
-    <?php
-    include('Raccourci.html')
-    ?>
-   
-    <?php
-    //Appel du script de connexion
-    include('connect.php');
-    //---------------------------------------------------------------------
-	// R�cup�rer les valeurs saisies dans le formulaire dans les variables
-	//---------------------------------------------------------------------
-    if(isset($_POST["BouttonValider"])){
-        $DepotLegal=$_POST["DepotLegal"];
-        $NomCommercial=$_POST["NomCommercial"];
-        $Famille=$_POST["Famille"];
-        $Composition=$_POST["Composition"];
-        $Effets=$_POST["Effets"];
-        $ContreIndication=$_POST["ContreIndication"];
-        $Prix=$_POST["Prix"];
-
-        $reqSQL='SELECT COUNT(*) FROM medicament WHERE MedicType = "AAA"';
-        echo("result : ");
-        $result->exec($reqSQL);
-        echo $result;
-        echo("<div>$DepotLegal"." | "."$NomCommercial"." | "."$Famille"." | "."$Composition"." | "."$Effets"." | "."$ContreIndication<div>");
-        //On récupère dans des variables les données saisies par l'utilisateur
-        $reqSQL="INSERT INTO medicament VALUES ('AAA','$DepotLegal','$NomCommercial','$Famille','$Composition','$Effets','$ContreIndication','$Prix')";
-        
-        //Execution de la requête
-        $connexion->exec($reqSQL) or die ("erreur dans la requête sql");
-    
-        //on ferme la connexion
-        $connexion=null;
-        $connexion=null;
-    }else{
-        echo("null");
-    }
-    ?>
-    <form action="Page_MEDICAMENT.php" method="post" onsubmit="test()">
-    <div id="CDPCentre">
-        <div id="Test245">
-            <p>
-            <h2>PHARMACOPEE</h2> 
-            </p>
-                </div>
-                <div id="medicament_corps">
-                <br>
-                <p>
-                DEPOT LEGAL :  <input type="text" name='DepotLegal' value="A">
-                </p>
-                <p>
-                NOM COMMERCIAL : <input type="text" name='NomCommercial' value="B">
-                </p>
-                <p>
-                FAMILLE: <input type="text" name='Famille' value="C">
-                </p>
-                COMPOSANT : 
-                <p>
-                <textarea name="Composition" id="" cols="30" rows="10" maxlength="1000">D</textarea>
-                </p>
-                EFFETS :
-                <p>
-                <textarea name="Effets" id="" cols="30" rows="10" maxlength="1000">E</textarea>
-                </p>
-                CONTRE INDICATION :
-                <p>
-                <textarea name="ContreIndication" id="" cols="30" rows="10" maxlength="1000" >F</textarea>
-                </p>
-                PRIX ECHANTILLON : 
-                <p>
-                <textarea name="Prix" id="" cols="30" rows="10" maxlength="1000">1</textarea>
-                <textarea id="" cols="30" rows="10" maxlength="1000" name='$Composition'></textarea>
-                </p>
-                EFFETS :
-                <p>
-                <textarea  id="" cols="30" rows="10" maxlength="1000" name='$Effets'></textarea>
-                </p>
-                CONTRE INDICATION :
-                <p>
-                <textarea  id="" cols="30" rows="10" maxlength="1000" name='$ContraIndication'></textarea>
-                </p>
-                PRIX ECHANTILLON : 
-                <p>
-                <textarea id="" cols="30" rows="10" maxlength="1000" name='$Prix'></textarea>
-                </p>
-                <button type="submit" name="Ajout" value="Ajouter">Ajouter</button>       
-                
-                <button type="submit" name="BouttonValider">Ajouter</button>           
+        <?php
+        include('Raccourci.html')
+        ?>
+        <div style="display:inline-table;" id="CDPCentre">
+            <div id="TitreSection">
+                <h2>PHARMACOPEE</h2>
+            </div>
+            <div id="CorpSection">
+                <table>
+                    <tr>
+                        <td>
+                            <p>DEPOT LEGAL :</p>
+                        </td>
+                        <td>
+                            <input type="text" name="DepotLegal" class="bouton">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>NOM COMMERCIAL :</p>
+                        </td>
+                        <td>
+                            <input type="text" name="NomCommercial" id="bouton">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>FAMILLE :</p>
+                        </td>
+                        <td>
+                            <input type="text" name="MedoFamille" id="bouton">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p>COMPOSANT :</p>
+                        </td>
+                    <tr>
+                        <td colspan="2">
+                            <textarea name="TxtARComposant" cols="30" rows="10"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p>EFFETS :</p>
+                        </td>
+                    <tr>
+                        <td colspan="2">
+                            <textarea name="TxtAREffets" cols="30" rows="10"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p>CONTRE INDICATION :</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <textarea name="TxtARContreIndic" cols="30" rows="10"></textarea>
+                        </td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>COMBIEN A AJOUTER :</p>
+                        </td>
+                        <td>
+                            <input type="number" name="NbAjouter" id="bouton">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>PRIX :</p>
+                        </td>
+                        <td>
+                            <input type="number" name="NbPrix" id="">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="BoutonEdition">
+                <button type="submit" name="ValiderMedoc">AJOUTER</button>
             </div>
         </div>
         <div id="ZoneRaccourci"></div>
-        </div>
-    </form>
-    </div>     
     </div>
+    
     <?php
     include("BasDePage.HTML")
     ?>
-    </body>
+</body>
 </html>

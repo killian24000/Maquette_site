@@ -54,7 +54,7 @@ INSERT INTO Medecin VALUE(
     "D",
     2,
     "TRUE"
-)
+);
 
 CREATE TABLE MedecinHoraire(
     MedID INTEGER PRIMARY Key,
