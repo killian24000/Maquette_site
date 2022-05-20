@@ -37,6 +37,25 @@ CREATE TABLE Medecin(
 
 );
 
+INSERT INTO Medecin VALUE(
+    200,
+    "Poisson",
+    "Ariel",
+    "136 rue de la mer",
+    "Atlantide",
+    1000,
+    "2eme etage",
+    06699669,
+    "A",
+    "B",
+    "AZERTYU",
+    1,
+    1,
+    "D",
+    2,
+    "TRUE"
+)
+
 CREATE TABLE MedecinHoraire(
     MedID INTEGER PRIMARY Key,
     Lun VARCHAR(40),
@@ -80,5 +99,6 @@ CREATE TABLE Medicament(
     Composition VARCHAR(300),
     Effets VARCHAR(300),
     ContreIndication VARCHAR(300),
+    MedicNb INTEGER,
     Prix FLOAT
 );
