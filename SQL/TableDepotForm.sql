@@ -72,6 +72,7 @@ CREATE TABLE Rapport(
     RapportVersion INTEGER,
     RapportDefinitif VARCHAR(5),
     MedID INTEGER,
+    Remplacent VARCHAR(5),
     CoefDeFiabiliter FLOAT,
     RapportDate DATE,
     DebutRedaction DATETIME,  
