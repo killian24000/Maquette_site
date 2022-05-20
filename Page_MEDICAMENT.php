@@ -11,7 +11,6 @@
     <title>GSB | Medicament</title>
 </head>
     <body>
-<<<<<<< Updated upstream
     <?php
     include("HautDePage.HTML")
     ?>
@@ -47,17 +46,10 @@
         //$connexion->exec($reqSQL) or die ("erreur dans la requête sql");
     
         //on ferme la connexion
-<<<<<<< HEAD
         //$connexion=null;
-
-=======
         $connexion=null;
-<<<<<<< HEAD
-=======
->>>>>>> f7e2d82d7214aea7776e83f683c591a2ada27cfd
     }else{
         echo("null");
->>>>>>> e66d6da5dfd415b45e028022371a854203510fc4
     }
     ?>
     <form action="Page_MEDICAMENT.php" method="post" onsubmit="test()">
@@ -66,15 +58,6 @@
             <p>
             <h2>PHARMACOPEE</h2> 
             </p>
-=======
-        <?php
-        include('HautDePage.HTML');
-        ?>
-            <div id="test">
-                    <p>
-                        <h2>PHARMACOPEE</h2> 
-                    </p>
->>>>>>> Stashed changes
                 </div>
                 <div id="medicament_corps">
                 <br>
@@ -89,7 +72,6 @@
                 </p>
                 COMPOSANT : 
                 <p>
-<<<<<<< HEAD
                 <textarea name="Composition" id="" cols="30" rows="10" maxlength="1000">D</textarea>
                 </p>
                 EFFETS :
@@ -103,7 +85,6 @@
                 PRIX ECHANTILLON : 
                 <p>
                 <textarea name="Prix" id="" cols="30" rows="10" maxlength="1000">1</textarea>
-=======
                 <textarea id="" cols="30" rows="10" maxlength="1000" name='$Composition'></textarea>
                 </p>
                 EFFETS :
@@ -117,16 +98,12 @@
                 PRIX ECHANTILLON : 
                 <p>
                 <textarea id="" cols="30" rows="10" maxlength="1000" name='$Prix'></textarea>
->>>>>>> f7e2d82d7214aea7776e83f683c591a2ada27cfd
                 </p>
-<<<<<<< HEAD
-                <button type="submit" name="Ajout" value="Ajouter">Ajouter</button>            
-=======
-                <button type="submit" name="BouttonValider">Ajouter</button>            
->>>>>>> e66d6da5dfd415b45e028022371a854203510fc4
+                <button type="submit" name="Ajout" value="Ajouter">Ajouter</button>       
+                
+                <button type="submit" name="BouttonValider">Ajouter</button>           
             </div>
         </div>
-<<<<<<< Updated upstream
         <div id="ZoneRaccourci"></div>
         </div>
     </form>
@@ -135,10 +112,5 @@
     <?php
     include("BasDePage.HTML")
     ?>
-=======
-        <?php
-        include('BasDePage.HTML')
-        ?>
->>>>>>> Stashed changes
     </body>
 </html>
