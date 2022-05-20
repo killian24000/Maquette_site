@@ -47,19 +47,19 @@ include("HautDePage.HTML")
             $code=$ligne["MedID"]; //code du praticien
             $nom=$ligne["MedNom"];  //Nom du praticien
             $prenom=$ligne["MedPrenom"];  //Prenom du praticien
-            $adresse = $ligne['MedAdresse'];
-            $ville = $ligne['MedVille'];
-            $CP = $ligne['MedCP'];
-            $AdresseComplement = $ligne['MedAdresseComplement'];
-            $Coordonnee = $ligne['MedCoordonnee'];
-            $fonction = $ligne['MedFonction'];
-            $Associé = $ligne['MedAssocierA'];
-            $Description = $ligne['MedDescription'];
-            $notoriete = $ligne['MedCoefDeNotoriete'];
-            $confiance = $ligne ['MedCoefDeConfience'];
-            $formation = $ligne ['MedFormation'];
-            $moyenne = $ligne ['MedMoyPatientele'];
-            $nouveau = $ligne ['MedNouveau'];
+            $adresse = $ligne['MedAdresse']; //Adresse du praticien 
+            $ville = $ligne['MedVille']; //Ville du praticien 
+            $CP = $ligne['MedCP']; //Code Postal du praticien 
+            $AdresseComplement = $ligne['MedAdresseComplement']; //Complément d'adresse du praticien 
+            $Coordonnee = $ligne['MedCoordonnee']; //Coordonnées du Praticien 
+            $fonction = $ligne['MedFonction']; //Fonction du Praticien 
+            $Associé = $ligne['MedAssocierA']; //Institut du Praticien 
+            $Description = $ligne['MedDescription']; //Description du Praticien 
+            $notoriete = $ligne['MedCoefDeNotoriete']; //Notoriété du Praticien
+            $confiance = $ligne ['MedCoefDeConfience']; //Coefficien de confiance du Praticien 
+            $formation = $ligne ['MedFormation']; //Formation du Praticien 
+            $moyenne = $ligne ['MedMoyPatientele']; //Moyenne du Praticien 
+            $nouveau = $ligne ['MedNouveau']; //Compétence du Praticien
             //On génère une ligne dans la liste déroulante 
             echo("<option value=".$code.">$nom $prenom</option>");
             //Lecture de la ligne suivante dans le jeu d'enregistrement

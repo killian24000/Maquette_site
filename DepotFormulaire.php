@@ -3,7 +3,6 @@
     //démarrer une session
     session_start();
     //test vérifiant la présence de la variable de session
-    echo($_SESSION['ok']);
     if($_SESSION['ok']!='oui')
     {
         //redirection vers la page de démarrage du site(index.html)

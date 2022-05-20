@@ -9,7 +9,7 @@
     <link href="CSS/Banniere.css" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="16x16" href="Image/Logo-gsb2.0.png">
     <script type="text/javascript">
-        function verifChamps()
+        function verifChamps() //Verifie si les champs de connexion sont remplis 
         {
             if(document.getElementById('nom').value==''
             ||document.getElementById('motDePasse').value=='')

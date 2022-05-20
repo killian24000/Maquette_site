@@ -17,15 +17,15 @@ if($_SESSION['ok']!='oui')
         <link href="CSS/Banniere.CSS" rel="stylesheet">
         <link href="CSS/Formulaire.CSS" rel="stylesheet">
         <link rel="icon" type="image/png" sizes="16x16" href="Image/Logo-gsb2.0.png">
-        <title>GLPI | FAQ</title>
+        <title>GSB | FAQ</title>
     </head>
     <body>
         <?php
-        include("HautDePage.HTML");
+        include("HautDePage.HTML"); //Inclusion de la page correspondant à la bannière du Haut de Page 
         ?>
         <div style="display: flex">
             <?php
-            include("Raccourci.html");
+            include("Raccourci.html"); // Inclusion de la page correspondant au menu 
             ?>
             <div id="FAQ">
                 <div class="question" id="Q1">
@@ -48,7 +48,7 @@ if($_SESSION['ok']!='oui')
             <div id="ZoneRaccourci"></div>
         </div>
         <?php 
-        include("BasDePage.HTML")
+        include("BasDePage.HTML") //Inclusion de la bannière correspondant à la bannière du bas de page
         ?>
     </body>
 </html>
