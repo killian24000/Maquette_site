@@ -31,8 +31,6 @@ include("HautDePage.HTML")
 </div>
  <div id="titre"> 
     <form name="lstDeroulante" action="PRATICIEN.php" method="POST">
-    <?php
-    ?>
     <br>
     <select name="Valider">
     <option value="*">---Choisir un praticien---</option>
