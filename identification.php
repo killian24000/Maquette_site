@@ -9,7 +9,10 @@
     $motPasseSaisi = $_POST["motDePasse"];
 
     //On récupère dans la base de données le mot de passe qui correspond au nom saisi par le visiteur 
+<<<<<<< Updated upstream
     $reqSQL ="SELECT MotDePasse FROM authentification WHERE Identifiant = '$nomSaisi'";
+=======
+>>>>>>> Stashed changes
     $res = $connexion->query($reqSQL);
     $ligne = $res->fetch();
     $motPasseBdd = $ligne['MotDePasse'];
@@ -25,16 +28,15 @@
         include('index.php');
         
     }
-    else 
+    else    
     // Le mot de passe saisi correspond � celui de la base utilisateur
     {  
         //démarrage d'une session 
         session_start();
         //Création d'une variable de session 
-        $_SESSION['ok']="oui";
+        $_SESSION['ok']=true;
         //retour vers la page d'entrée du site
         header("location:Page_acceuil.php"); 
-       
     }
     //On libère le jeu d'enregistrement
     $res->closeCursor();
