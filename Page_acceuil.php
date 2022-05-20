@@ -55,7 +55,6 @@
         </div>
         <?php
         include("BasDePage.HTML");
-        echo($_SESSION['ok']);
         ?>
     </body>
 </HTML>
