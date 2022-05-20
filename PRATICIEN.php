@@ -37,18 +37,28 @@ if($_SESSION['ok']!='oui')
           <?php
               //Appel du script de connexion
               require("connect.php");
-            $res=$connexion->query('SELECT MedCode, MedNom, MedPrenom, MedAdresse, MedVille, MedCP FROM medecin');
+            $res=$connexion->query('SELECT *  FROM medecin');
             $ligne = $res->fetch();
 
             while($ligne!=false) //Tant que la requête n'est pas fausse 
             {   
-              if($_POST["Valider"]==$ligne['MedCode']){  //Si le code du Praticien correspond au nom 
-                $id = $ligne['MedCode'];
+              if($_POST["Valider"]==$ligne['MedID']){  //Si le code du Praticien correspond au nom 
+                $id = $ligne['MedID'];
                 $nom = $ligne['MedNom'];
                 $prenom = $ligne['MedPrenom'];
                 $adresse = $ligne['MedAdresse'];
                 $ville = $ligne['MedVille'];
                 $CP = $ligne['MedCP'];
+                $AdresseComplement = $ligne['MedAdresseComplement'];
+                $Coordonnee = $ligne['MedCoordonnee'];
+                $fonction = $ligne['MedFonction'];
+                $Associé = $ligne['MedAssocierA'];
+                $Description = $ligne['MedDescription'];
+                $notoriete = $ligne['MedCoefDeNotoriete'];
+                $confiance = $ligne ['MedCoefDeConfience'];
+                $formation = $ligne ['MedFormation'];
+                $moyenne = $ligne ['MedMoyPatientele'];
+                $nouveau = $ligne ['MedNouveau'];
               }
               $ligne=$res->fetch();
             }
@@ -56,8 +66,17 @@ if($_SESSION['ok']!='oui')
 
             //Mise en page et affichage des requêtes
             echo"<h3>"."Nom et Prénom Praticien : ".$nom." ".$prenom."</h3>"; 
-            echo"<h3>"."Adresse : ".$adresse.", ".$CP.", ".$ville."</h3>"; 
-          ?>
+            echo"<h3>"."Adresse : ".$adresse.", ".$CP.", ".$ville.",".$AdresseComplement."</h3>"; 
+            echo"<h3>"."Coordonées : ".$Coordonnee."</h3>";
+            echo"<h3>"."Fonction : ".$fonction."</h3>";
+            echo"<h3>"."Etablissement : ".$Associé."</h3>";
+            echo"<h3>"."Description : ".$Description."</h3>";
+            echo"<h3>"."Notoriété : ".$notoriete."</h3>";
+            echo"<h3>"."Confiance : ".$confiance."</h3>";
+            echo"<h3>"."Formation : ".$formation."</h3>";
+            echo"<h3>"."Moyenne : ".$moyenne."</h3>";
+            echo"<h3>"."Experience : ".$nouveau."</h3>";
+            ?>
         </div>
       </div>
       <div id="ZoneRaccourci"></div>

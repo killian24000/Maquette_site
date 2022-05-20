@@ -31,8 +31,6 @@ include("HautDePage.HTML")
 </div>
  <div id="titre"> 
     <form name="lstDeroulante" action="PRATICIEN.php" method="POST">
-    <?php
-    ?>
     <br>
     <select name="Valider">
     <option value="*">---Choisir un praticien---</option>
@@ -46,9 +44,22 @@ include("HautDePage.HTML")
         while($ligne!=false)
         {   //On stock les données du praticien dans des variables
             $i+=1;
-            $code=$ligne["MedCode"]; //code du praticien
+            $code=$ligne["MedID"]; //code du praticien
             $nom=$ligne["MedNom"];  //Nom du praticien
             $prenom=$ligne["MedPrenom"];  //Prenom du praticien
+            $adresse = $ligne['MedAdresse'];
+            $ville = $ligne['MedVille'];
+            $CP = $ligne['MedCP'];
+            $AdresseComplement = $ligne['MedAdresseComplement'];
+            $Coordonnee = $ligne['MedCoordonnee'];
+            $fonction = $ligne['MedFonction'];
+            $Associé = $ligne['MedAssocierA'];
+            $Description = $ligne['MedDescription'];
+            $notoriete = $ligne['MedCoefDeNotoriete'];
+            $confiance = $ligne ['MedCoefDeConfience'];
+            $formation = $ligne ['MedFormation'];
+            $moyenne = $ligne ['MedMoyPatientele'];
+            $nouveau = $ligne ['MedNouveau'];
             //On génère une ligne dans la liste déroulante 
             echo("<option value=".$code.">$nom $prenom</option>");
             //Lecture de la ligne suivante dans le jeu d'enregistrement
