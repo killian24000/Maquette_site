@@ -1,5 +1,6 @@
 <?php
 session_start();
+$_SESSION['test']="AAA";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +11,7 @@ session_start();
     <title>Document</title>
 </head>
 <body>
-    <form method="POST" action="test7.php">
+    <form method="POST" action="test7A.php">
         Entrez votre nom : <input type="TEXT" name="nom">
         <input type="SUBMIT" value="OK">
     </form>
