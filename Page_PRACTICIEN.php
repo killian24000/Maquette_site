@@ -29,7 +29,7 @@ include("HautDePage.HTML")
 <div id="PraticienBis">
 <h1>Praticien</h1>
 </div>
- <div id="titre"> 
+<div id="titre"> 
     <form name="lstDeroulante" action="PRATICIEN.php" method="POST">
     <br>
     <select name="Valider">

@@ -35,6 +35,7 @@ if($_SESSION['ok']!='oui')
         </div>
         <div id="Praticien">
           <?php
+          echo($_POST["Valider"]);
               //Appel du script de connexion
               require("connect.php");
             $res=$connexion->query('SELECT *  FROM medecin');
