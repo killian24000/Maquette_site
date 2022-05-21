@@ -328,7 +328,7 @@
                     <h2>Option</h2>
                 </div>
                 <div id="CorpRaccourci">
-                    <a href="AffichageFormulaire.php">Afficher un formulaire<br>précedent</a><br>
+                    <a href="SelectionFormulaire.php">Afficher un formulaire<br>précedent</a><br>
                     <a href="">Modifier un de<br>vos formulaire</a><br>
                 </div>
             </figure>
