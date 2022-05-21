@@ -94,6 +94,7 @@ CREATE TABLE Authentification(
 );
 
 CREATE TABLE Medicament(
+    MedicID INTEGER PRIMARY KEY,
     MedicType VARCHAR(20),
     DepotLegal VARCHAR(20),
     NomCommercial VARCHAR(20),
@@ -104,3 +105,5 @@ CREATE TABLE Medicament(
     MedicNb INTEGER,
     Prix FLOAT
 );
+
+INSERT INTO Medicament VALUE (120,'Generique','A','Ibuprofenne','C','D','E','F',18,2);
