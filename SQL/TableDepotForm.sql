@@ -67,16 +67,14 @@ CREATE TABLE MedecinHoraire(
 );
 
 CREATE TABLE Rapport(
-    UtilisateurID INTEGER PRIMARY Key,
-    RapportID INTEGER,
+    UtilisateurID INTEGER,
+    RapportID INTEGER PRIMARY Key,
     RapportVersion INTEGER,
     RapportDefinitif VARCHAR(5),
     MedID INTEGER,
     Remplacent VARCHAR(5),
     CoefDeFiabiliter FLOAT,
     RapportDate CHAR(10),
-    DebutRedaction DATETIME,  
-    FinRedacttion DATETIME,
     MotifVisite VARCHAR(20),
     Rapport VARCHAR(1000),
     ProduitID1 INTEGER,
@@ -84,6 +82,9 @@ CREATE TABLE Rapport(
     DocFournit VARCHAR(5),
     LesEchantillons VARCHAR(1000)
 );
+
+INSERT INTO `rapport` (`UtilisateurID`, `RapportID`, `RapportVersion`, `RapportDefinitif`, `MedID`, `Remplacent`, `CoefDeFiabiliter`, `RapportDate`, `MotifVisite`, `Rapport`, `ProduitID1`, `ProduitID2`, `DocFournit`, `LesEchantillons`)
+VALUES ('1', '1', '1', 'FALSE', '1', 'TRUE', '1', '2022-05-19', 'A', 'A', '1', '1', 'TRUE', 'A');
 
 CREATE TABLE Authentification(
     UtilisateurID INTEGER PRIMARY Key,
