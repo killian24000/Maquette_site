@@ -39,7 +39,7 @@
         </div>
         <div id="Menu2">
             <br>
-            <a href="Page_MEDICAMENT.php">Médicaments</a>
+            <a href="Page_MEDICAMENT.php">Médicament</a>
             <br>
             <br>
             <a href="Page_PRACTICIEN.php">Praticien</a>
