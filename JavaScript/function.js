@@ -19,5 +19,5 @@ function DateFormatTrad(){
     jour=Date[2];
     mois=Date[1];
     annee=Date[0];
-    return (jour+" "+mois+" "+annee);
+    return (jour+"/"+mois+"/"+annee);
 }
