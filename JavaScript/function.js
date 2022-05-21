@@ -12,3 +12,12 @@ function DateDuJour(){
     DateBonFormat=(annee+"-"+mois+"-"+jour);
     return DateBonFormat;
 }
+
+function DateFormatTrad(){
+    Date=DateDuJour();
+    Date=Date.split("-");
+    jour=Date[2];
+    mois=Date[1];
+    annee=Date[0];
+    return (jour+" "+mois+" "+annee);
+}
