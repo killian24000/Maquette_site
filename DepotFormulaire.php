@@ -46,14 +46,14 @@
                     </tr>
                     <tr>
                         <td>
-                            Practitien
+                            Praticien
                         </td>
                         <td>
                             <!--
                             Slct_Practitient : Selection de practition
                             <select> : Liste déroulante-->
                             <select name="NomPractitien" id="Slct_Practitient" class="bouton">
-                                <option value="">Choisire un Practitien</option>
+                                <option value="">Choisir un Praticien</option>
                                 <!-- lier a la base de donne pour reccupérer les nom -->
                             </select>
                             <button>Detail</button>
@@ -61,7 +61,7 @@
                     </tr>
                     <tr>
                         <td>
-                            Coeficient
+                            Coefficient
                         </td>
                         <td>
                             <input type="number" name="Coef" id="Coef" class="bouton">

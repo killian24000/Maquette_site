@@ -117,8 +117,7 @@
             </div>
         </div>
         <div id="ZoneRaccourci"></div>
-    </div>
-    
+    </div>    
     <?php
     include("BasDePage.HTML")
     ?>
