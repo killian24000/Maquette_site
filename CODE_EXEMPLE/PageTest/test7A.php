@@ -1,5 +1,6 @@
 <?php
 session_start();
+echo($_SESSION['test']);
 $_SESSION['nom'] = $_POST['nom'];
 ?>
 <html>
