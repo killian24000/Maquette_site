@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<?php
+    //démarrer une session
+    session_start();
+    //test vérifiant la présence de la variable de session
+    if($_SESSION['ok']!='oui')
+    {
+        //redirection vers la page de démarrage du site(index.html)
+        header("location:index.php");
+    }
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,36 +22,21 @@
 </head>
 <body>
     <?php
-    include('connect.php');
-        
-    if (isset($_POST["ValiderMedoc"])){
-        $Type=$_POST["ListeType"];
-        $DepotLegal=$_POST["DepotLegal"];
-        $NomCommercial=$_POST["NomCommercial"];
-        $Famille=$_POST["MedocFamille"];
-        $Composition=$_POST["TxtARComposant"];
-        $Effets=$_POST["TxtAREffets"];
-        $ContreIndication=$_POST["TxtARContreIndic"];
-        $Ajouter=$_POST["NbAjouter"];
-        $Prix=$_POST["NbPrix"];
+        include('connect.php');
+            
+        if (isset($_POST["ValiderMedoc"])){
+            $Type=$_POST["ListeType"];
+            $DepotLegal=$_POST["DepotLegal"];
+            $NomCommercial=$_POST["NomCommercial"];
+            $Famille=$_POST["MedocFamille"];
+            $Composition=$_POST["TxtARComposant"];
+            $Effets=$_POST["TxtAREffets"];
+            $ContreIndication=$_POST["TxtARContreIndic"];
+            $Ajouter=$_POST["NbAjouter"];
+            $Prix=$_POST["NbPrix"];
 
 
-        $reqSQL="SELECT COUNT(*) FROM medicament 
-                WHERE MedicType='$Type'
-                AND DepotLegal='$DepotLegal'
-                AND NomCommercial='$NomCommercial'
-                AND Famille='$Famille'
-                AND Composition='$Composition'
-                AND Effets='$Effets'
-                AND ContreIndication='$ContreIndication'
-        ";
-        $res = $connexion->query($reqSQL);
-        $ligne = $res->fetch();
-
-        if ($ligne[0]>0){
-            echo("<script>alert('Les information saisie corresponde a des donnée exsistante. Ces donnée on donc était mise a jour.')</script>");
-            //On récupère dans des variables les données saisies par l'utilisateur
-            $reqSQL="UPDATE medicament SET MedicNb=MedicNb+'$Ajouter',Prix='$Prix'
+            $reqSQL="SELECT COUNT(*) FROM medicament 
                     WHERE MedicType='$Type'
                     AND DepotLegal='$DepotLegal'
                     AND NomCommercial='$NomCommercial'
@@ -50,24 +45,39 @@
                     AND Effets='$Effets'
                     AND ContreIndication='$ContreIndication'
             ";
+            $res = $connexion->query($reqSQL);
+            $ligne = $res->fetch();
+
+            if ($ligne[0]>0){
+                echo("<script>alert('Les information saisie corresponde a des donnée exsistante. Ces donnée on donc était mise a jour.')</script>");
+                //On récupère dans des variables les données saisies par l'utilisateur
+                $reqSQL="UPDATE medicament SET MedicNb=MedicNb+'$Ajouter',Prix='$Prix'
+                        WHERE MedicType='$Type'
+                        AND DepotLegal='$DepotLegal'
+                        AND NomCommercial='$NomCommercial'
+                        AND Famille='$Famille'
+                        AND Composition='$Composition'
+                        AND Effets='$Effets'
+                        AND ContreIndication='$ContreIndication'
+                ";
+                
+                //Execution de la requête
+                $connexion->exec($reqSQL) or die ("erreur dans la requête sql");
             
-            //Execution de la requête
-            $connexion->exec($reqSQL) or die ("erreur dans la requête sql");
-        
-            //on ferme la connexion
-            $connexion=null;
-        }else{
-            echo("<script>alert('Les information saisie on etait ajouter.')</script>");
-            //On récupère dans des variables les données saisies par l'utilisateur
-            $reqSQL="INSERT INTO medicament VALUES ('$Type','$DepotLegal','$NomCommercial','$Famille','$Composition','$Effets','$ContreIndication','$Ajouter','$Prix')";
+                //on ferme la connexion
+                $connexion=null;
+            }else{
+                echo("<script>alert('Les information saisie on etait ajouter.')</script>");
+                //On récupère dans des variables les données saisies par l'utilisateur
+                $reqSQL="INSERT INTO medicament VALUES ('$Type','$DepotLegal','$NomCommercial','$Famille','$Composition','$Effets','$ContreIndication','$Ajouter','$Prix')";
+                
+                //Execution de la requête
+                $connexion->exec($reqSQL) or die ("erreur dans la requête sql");
             
-            //Execution de la requête
-            $connexion->exec($reqSQL) or die ("erreur dans la requête sql");
-        
-            //on ferme la connexion
-            $connexion=null;
+                //on ferme la connexion
+                $connexion=null;
+            }
         }
-    }
     ?>
     <?php
     include("HautDePage.HTML")
