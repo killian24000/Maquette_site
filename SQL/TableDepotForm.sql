@@ -107,3 +107,11 @@ CREATE TABLE Medicament(
 );
 
 INSERT INTO Medicament VALUE (120,'Generique','A','Ibuprofenne','C','D','E','F',18,2);
+
+ALTER TABLE `rapport` ADD INDEX(`UtilisateurID`);
+
+ALTER TABLE `rapport` ADD INDEX(`MedID`);
+
+ALTER TABLE `rapport` ADD INDEX(`ProduitID1`);
+
+ALTER TABLE `rapport` ADD INDEX(`ProduitID2`);
