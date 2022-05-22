@@ -48,6 +48,9 @@
             <a href="FAQ.php">FAQ</a>
             <br>
             <br>
+            <a href="Nomenclature.php">Conditions d'utilisations</a>
+            <br>
+            <br>
             <form name="BtnDeconnexion" action="FormulaireDeconnexion.php" method="post">
             <button type="submit">Déconnexion</button>
             </form>
