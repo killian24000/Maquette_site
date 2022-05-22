@@ -29,6 +29,8 @@
         if (isset($_POST["ValiderRapport"])){
             $Validation=0;
 
+            $UtilisateurIdentifiant=$_SESSION['IDUser'];
+
             $NumeroRapport=$_POST["RapportID"];
             $NumeroRapport="$NumeroRapport";
             $VersionRapport=1;
@@ -122,7 +124,7 @@
                 echo("<br><br>oui".$CoefDeFiabiliter."|");*/
 
                 //On récupère dans des variables les données saisies par l'utilisateur
-                $reqSQL="INSERT INTO rapport VALUES (1,$NumeroRapport,$VersionRapport,'$RapportDefinitif',$MedIdentifiant,'$Remplacent',$CoefDeFiabiliter,
+                $reqSQL="INSERT INTO rapport VALUES ($UtilisateurIdentifiant,$NumeroRapport,$VersionRapport,'$RapportDefinitif',$MedIdentifiant,'$Remplacent',$CoefDeFiabiliter,
                 '$DateDuRapport','$MotifDeLaVisite','$Rapport',$IdProduit1,$IdProduit2,'$DocFourni','$LesEchantillon')";
                 
                 //Execution de la requête
