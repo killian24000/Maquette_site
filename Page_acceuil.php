@@ -63,7 +63,7 @@
             <br>
         </div>
         <?php
-        include("BasDePage.HTML");
+        include("BasDePage.html");
         ?>
     </body>
 </HTML>

@@ -21,7 +21,7 @@ if($_SESSION['ok']!='oui')
     </head>
     <body>
         <?php
-        include("HautDePage.HTML"); //Inclusion de la page correspondant à la bannière du Haut de Page 
+        include("HautDePage.html"); //Inclusion de la page correspondant à la bannière du Haut de Page 
         ?>
         <div style="display: flex">
             <?php
@@ -48,7 +48,7 @@ if($_SESSION['ok']!='oui')
             <div id="ZoneRaccourci"></div>
         </div>
         <?php 
-        include("BasDePage.HTML") //Inclusion de la bannière correspondant à la bannière du bas de page
+        include("BasDePage.html") //Inclusion de la bannière correspondant à la bannière du bas de page
         ?>
     </body>
 </html>

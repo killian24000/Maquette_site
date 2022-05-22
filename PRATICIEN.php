@@ -16,14 +16,14 @@ if($_SESSION['ok']!='oui')
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="CSS/GSBCSS.css" rel="stylesheet">
-  <link href="CSS/Banniere.CSS" rel="stylesheet">
+  <link href="CSS/Banniere.css" rel="stylesheet">
   <link href="cSS/Formulaire.css" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="16x16" href="Image/Logo-gsb2.0.png">
   <title>GSB | PRATICIEN</title>
 </head>
 <body>
   <?php
-  include("HautDePage.HTML");
+  include("HautDePage.html");
   ?>
   <div style="display: flex" id="CorpDePage">
       <?php
@@ -82,7 +82,7 @@ if($_SESSION['ok']!='oui')
       <div id="ZoneRaccourci"></div>
   </div>
   <?php
-  include("BasDePage.HTML")
+  include("BasDePage.html")
   ?>
 </body>
 </html>

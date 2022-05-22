@@ -24,7 +24,7 @@ require('connect.php');
 </head>
 <body>
 <?php
-include("HautDePage.HTML")
+include("HautDePage.html")
 ?>
 <div id="PraticienBis">
 <h1>Praticien</h1>
@@ -75,7 +75,7 @@ include("HautDePage.HTML")
         </form>
     </div>
 <?php
-include("BasDePage.HTML")
+include("BasDePage.html")
 ?>    
 </body>
 </html>

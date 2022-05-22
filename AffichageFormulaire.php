@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GSB | Affichage de formulaire</title>
-    <link rel="stylesheet" href="CSS/Banniere.CSS">
-    <link rel="stylesheet" href="CSS/Formulaire.CSS">
-    <link rel="stylesheet" href="CSS/MaquetteCSS.CSS">
+    <link rel="stylesheet" href="CSS/Banniere.css">
+    <link rel="stylesheet" href="CSS/Formulaire.css">
+    <link rel="stylesheet" href="CSS/MaquetteCSS.css">
     <script src="JavaScript/function.js"></script>
     <link rel="icon" type="image/png" sizes="16x16" href="Image/Logo-gsb2.0.png">
 </head>
@@ -256,7 +256,7 @@
         <div id="ZoneRaccourci"></div>
     </div>
     <?php
-    include('BasDePage.HTML')
+    include('BasDePage.html')
     ?>
 </body>
 </html>

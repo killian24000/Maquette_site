@@ -22,7 +22,7 @@
 </head>
 <body>
     <?php
-    include('HautDePage.HTML');
+    include('HautDePage.html');
     ?>
     <div style="display: flex" id="CorpDePage">
         <?php
@@ -48,7 +48,7 @@
     </div>
     
     <?php
-    include('BasDePage.HTML');
+    include('BasDePage.html');
     ?>            
 </body>
 </html>
