@@ -25,6 +25,7 @@
         include('connect.php');
             
         if (isset($_POST["ValiderMedoc"])){
+            $IdentifiantMedicament=$_POST["MedicamentID"];
             $Type=$_POST["ListeType"];
             $DepotLegal=$_POST["DepotLegal"];
             $NomCommercial=$_POST["NomCommercial"];
@@ -69,13 +70,12 @@
             }else{
                 echo("<script>alert('Les information saisie on etait ajouter.')</script>");
                 //On récupère dans des variables les données saisies par l'utilisateur
-                $reqSQL="INSERT INTO medicament VALUES ('$Type','$DepotLegal','$NomCommercial','$Famille','$Composition','$Effets','$ContreIndication','$Ajouter','$Prix')";
+                $reqSQL="INSERT INTO medicament VALUES ('$IdentifiantMedicament','$Type','$DepotLegal','$NomCommercial','$Famille','$Composition','$Effets','$ContreIndication','$Ajouter','$Prix')";
                 
                 //Execution de la requête
                 $connexion->exec($reqSQL) or die ("erreur dans la requête sql");
             
                 //on ferme la connexion
-                $connexion=null;
             }
         }
     ?>
@@ -93,6 +93,24 @@
                 </div>
                 <div id="CorpSection">
                     <table>
+                        <tr>
+                            <td>
+                                Identifiant du médicament
+                            </td>
+                            <td>
+                                <?php
+                                    $reqSQL="SELECT MAX(MedicID) FROM medicament";
+                                    //Exécute la requête
+                                    $result=$connexion->query($reqSQL);
+                                    //Lecture de la 1re ligne du jeu d'enregistrements
+                                    $ligne=$result->fetch();
+                                    $ligne=$ligne[0]+1;
+                                    $ligne="$ligne";
+                                    //Tant qu'on n'a pas atteint la fin du jeu d'enregistrements,on boucle
+                                    echo('<input type="text" name="MedicamentID" class="bouton" readonly="false" value="'.$ligne.'">');
+                                ?>
+                            </td>
+                        </tr>
                         <tr>
                             <td>
                                 <p>DEPOT LEGAL :</p>
