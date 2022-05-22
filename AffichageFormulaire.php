@@ -51,6 +51,48 @@
     $Echantillons9=explode(":",$LesEchantillons[8]);
     $Echantillons10=explode(":",$LesEchantillons[9]);
 
+
+    
+    $reqSQL="SELECT * FROM medicament";
+    $result=$connexion->query($reqSQL);
+    $ligne=$result->fetch();
+
+    while($ligne!=false){
+        if($Echantillons1[0]==$ligne['MedicID']){
+            $NomEchantillins1=$ligne['NomCommercial'];
+        }
+        if($Echantillons2[0]==$ligne['MedicID']){
+            $NomEchantillins2=$ligne['NomCommercial'];
+        }
+        if($Echantillons3[0]==$ligne['MedicID']){
+            $NomEchantillins3=$ligne['NomCommercial'];
+        }
+        if($Echantillons4[0]==$ligne['MedicID']){
+            $NomEchantillins4=$ligne['NomCommercial'];
+        }
+        if($Echantillons5[0]==$ligne['MedicID']){
+            $NomEchantillins5=$ligne['NomCommercial'];
+        }
+        if($Echantillons6[0]==$ligne['MedicID']){
+            $NomEchantillins6=$ligne['NomCommercial'];
+        }
+        if($Echantillons7[0]==$ligne['MedicID']){
+            $NomEchantillins7=$ligne['NomCommercial'];
+        }
+        if($Echantillons8[0]==$ligne['MedicID']){
+            $NomEchantillins8=$ligne['NomCommercial'];
+        }
+        if($Echantillons9[0]==$ligne['MedicID']){
+            $NomEchantillins9=$ligne['NomCommercial'];
+        }
+        if($Echantillons10[0]==$ligne['MedicID']){
+            $NomEchantillins10=$ligne['NomCommercial'];
+        }
+        $ligne=$result->fetch();
+    }
+
+
+
     //Récupération du nom prénom du visiteur via son identifiant
     $reqSQL="SELECT * FROM visiteur WHERE VisID=$IdentifiantUtilisateur";
     $result=$connexion->query($reqSQL);
@@ -80,7 +122,6 @@
         }
         $ligne=$result->fetch();
     }
-    echo($NomProduit1."<br>".$NomProduit2);
     ?>
     <?php
     include('HautDePage.html');
@@ -135,42 +176,42 @@
                         <td>
                             <h1>Les produits présentés</h1>
                             <?php
-                            echo("1er produit présenter : ".$IdentifiantDuProduit1."<br>");
-                            echo("2eme produit présenter : ".$IdentifiantDuProduit2."<br>");
+                            echo("1er produit présenter : ".$NomProduit1."<br>");
+                            echo("2eme produit présenter : ".$NomProduit2."<br>");
                             ?>
                         </td>
                         <td>
                             <h1>Les échantillons présentés</h1>
                             <?php
-                            if($Echantillons1[1]!=0){
-                                echo($Echantillons1[1]." echantillons de ".$Echantillons1[0]." ont étaient donnée<br>");
+                            if($Echantillons1[0]!=0 && $Echantillons1[1]!=0){
+                                echo($Echantillons1[1]." echantillons de ".$NomEchantillins1." ont étaient donnée<br>");
                             }
-                            if($Echantillons2[1]!=0){
-                                echo($Echantillons2[1]." echantillons de ".$Echantillons2[0]." ont étaient donnée<br>");
+                            if($Echantillons2[0]!=0 && $Echantillons2[1]!=0){
+                                echo($Echantillons2[1]." echantillons de ".$NomEchantillins2." ont étaient donnée<br>");
                             }
-                            if($Echantillons3[1]!=0){
-                                echo($Echantillons3[1]." echantillons de ".$Echantillons3[0]." ont étaient donnée<br>");
+                            if($Echantillons3[0]!=0 && $Echantillons3[1]!=0){
+                                echo($Echantillons3[1]." echantillons de ".$NomEchantillins3." ont étaient donnée<br>");
                             }
-                            if($Echantillons4[1]!=0){
-                                echo($Echantillons4[1]." echantillons de ".$Echantillons4[0]." ont étaient donnée<br>");
+                            if($Echantillons4[0]!=0 && $Echantillons4[1]!=0){
+                                echo($Echantillons4[1]." echantillons de ".$NomEchantillins4." ont étaient donnée<br>");
                             }
-                            if($Echantillons5[1]!=0){
-                                echo($Echantillons5[1]." echantillons de ".$Echantillons5[0]." ont étaient donnée<br>");
+                            if($Echantillons5[0]!=0 && $Echantillons5[1]!=0){
+                                echo($Echantillons5[1]." echantillons de ".$NomEchantillins5." ont étaient donnée<br>");
                             }
-                            if($Echantillons6[1]!=0){
-                                echo($Echantillons6[1]." echantillons de ".$Echantillons6[0]." ont étaient donnée<br>");
+                            if($Echantillons6[0]!=0 && $Echantillons6[1]!=0){
+                                echo($Echantillons6[1]." echantillons de ".$NomEchantillins6." ont étaient donnée<br>");
                             }
-                            if($Echantillons7[1]!=0){
-                                echo($Echantillons7[1]." echantillons de ".$Echantillons7[0]." ont étaient donnée<br>");
+                            if($Echantillons7[0]!=0 && $Echantillons7[1]!=0){
+                                echo($Echantillons7[1]." echantillons de ".$NomEchantillins7." ont étaient donnée<br>");
                             }
-                            if($Echantillons8[1]!=0){
-                                echo($Echantillons8[1]." echantillons de ".$Echantillons8[0]." ont étaient donnée<br>");
+                            if($Echantillons8[0]!=0 && $Echantillons8[1]!=0){
+                                echo($Echantillons8[1]." echantillons de ".$NomEchantillins8." ont étaient donnée<br>");
                             }
-                            if($Echantillons9[1]!=0){
-                                echo($Echantillons9[1]." echantillons de ".$Echantillons9[0]." ont étaient donnée<br>");
+                            if($Echantillons9[0]!=0 && $Echantillons9[1]!=0){
+                                echo($Echantillons9[1]." echantillons de ".$NomEchantillins9." ont étaient donnée<br>");
                             }
-                            if($Echantillons10[1]!=0){
-                                echo($Echantillons10[1]." echantillons de ".$Echantillons10[0]." ont étaient donnée<br>");
+                            if($Echantillons10[0]!=0 && $Echantillons10[1]!=0){
+                                echo($Echantillons10[1]." echantillons de ".$NomEchantillins10." ont étaient donnée<br>");
                             }
                             ?>
                         </td>
@@ -199,7 +240,7 @@
                                 }else{
                                     echo("Le rapport est modifiable<br>");
                                 }
-                                echo($IdentifiantDuMedecin." est ".$CoeficientFiabiliter."% Fiabiliter<br>");
+                                echo($MedecinNom." ".$MedecinPrenom." est ".$CoeficientFiabiliter."% fiable<br>");
                                 if($Remplacent=="TRUE"){
                                     echo("Le médecin vu est un remplaçant<br>");
                                 }
