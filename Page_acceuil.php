@@ -17,7 +17,7 @@
     <head>
         <meta charset="utf-8">
         <title>GSB | Acceuil</title>
-        <link href="CSS/MaquetteCSS.css" rel="stylesheet">
+        <link href="CSS/GSBCSS.css" rel="stylesheet">
         <link href="CSS/Banniere.CSS" rel="stylesheet">
         <link rel="icon" type="image/png" sizes="16x16" href="Image/Logo-gsb2.0.png">
     </head>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GSB | Selection du formulaire</title>
-    <link rel="stylesheet" href="CSS/Banniere.CSS">
+    <link rel="stylesheet" href="CSS/GSB.CSS">
     <link rel="stylesheet" href="CSS/Formulaire.CSS">
     <link rel="stylesheet" href="CSS/MaquetteCSS.CSS">
     <link rel="icon" type="image/png" sizes="16x16" href="Image/Logo-gsb2.0.png">
