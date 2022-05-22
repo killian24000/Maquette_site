@@ -198,7 +198,7 @@
                                 Coeficient de fiabiliter
                             </td>
                             <td>
-                                <input type="number" name="CoefFiable" id="Nb_Coef" class="bouton" min=0 max=100 value=50>
+                                <input type="number" name="CoefFiable" id="Nb_Coef" class="bouton" min=0 max=100 value=0>
                             </td>
                         </tr>
                         <tr>
@@ -259,7 +259,20 @@
                             <td>
                                 <select name="Prod1" id="Slct_Prod1" class="bouton">
                                     <option selected disabled value="default">Choisire un produit</option>
-                                    <option value="1100">Prodtest</option>
+                                    <?php
+                                        $reqSQL="SELECT * FROM medicament";
+                                        $result=$connexion->query($reqSQL);
+                                        $ligne=$result->fetch();
+                                        while($ligne!=false)
+                                        {   //On stock les données du praticien dans des variables
+                                            $MedicCode=$ligne["MedicID"]; //code du medicament
+                                            $MedicNom=$ligne["NomCommercial"];  //Nom du medicament
+                                            //On génère une ligne dans la liste déroulante 
+                                            echo("<option value=".$MedicCode.">$MedicNom</option>");
+                                            //Lecture de la ligne suivante dans le jeu d'enregistrement
+                                            $ligne=$result->fetch();
+                                        }
+                                    ?>
                                 </select>
                             </td>
                         </tr>
@@ -270,7 +283,20 @@
                             <td>
                                 <select name="Prod2" id="Slct_Prod2" class="bouton">
                                     <option selected disabled value="default">Choisire un produit</option>
-                                    <option value="2032">Prodtest</option>
+                                    <?php
+                                        $reqSQL="SELECT * FROM medicament";
+                                        $result=$connexion->query($reqSQL);
+                                        $ligne=$result->fetch();
+                                        while($ligne!=false)
+                                        {   //On stock les données du praticien dans des variables
+                                            $MedicCode=$ligne["MedicID"]; //code du medicament
+                                            $MedicNom=$ligne["NomCommercial"];  //Nom du medicament
+                                            //On génère une ligne dans la liste déroulante 
+                                            echo("<option value=".$MedicCode.">$MedicNom</option>");
+                                            //Lecture de la ligne suivante dans le jeu d'enregistrement
+                                            $ligne=$result->fetch();
+                                        }
+                                    ?>
                                 </select>
                             </td>
                         </tr>
@@ -291,22 +317,128 @@
                 </div>
                 <div id="CorpSection">
                     <table>
-                        <?php
-                        for($i=1; $i<11; $i++){
-                            echo('
-                                <tr>
-                                    <td>Echantillons '.$i.' :</td>
-                                    <td>
-                                        <select name="ListeEchantillons'.$i.'" class="bouton" type="Slct_Echantillons'.$i.'">
-                                            <option value="AAA'.$i.'">Rien</option>
-                                            <option value="PPP'.$i.'">Prod1</option>
-                                        </select>
-                                        <input type="number" name="NbEchantillons'.$i.'" class="NbEnchantillons" min=0 max=10 value=0>
-                                    </td>
-                                </tr>
-                            ');
-                        }
-                        ?>
+                        <tr>
+                            <td>Echantillons 1 :</td>
+                            <td>
+                                <select name="ListeEchantillons1" class="bouton" type="Slct_Echantillons1">
+                                    <option value="0">Rien</option>
+                                    <?php
+                                    include('IncludeListeMedicament.php');
+                                    ?>
+                                </select>
+                                <input type="number" name="NbEchantillons1" class="NbEnchantillons" min=0 max=10 value=0>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Echantillons 2 :</td>
+                            <td>
+                                <select name="ListeEchantillons2" class="bouton" type="Slct_Echantillons2">
+                                    <option value="0">Rien</option>
+                                    <?php
+                                    include('IncludeListeMedicament.php');
+                                    ?>
+                                </select>
+                                <input type="number" name="NbEchantillons2" class="NbEnchantillons" min=0 max=10 value=0>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Echantillons 3 :</td>
+                            <td>
+                                <select name="ListeEchantillons3" class="bouton" type="Slct_Echantillons3">
+                                    <option value="0">Rien</option>
+                                    <?php
+                                    include('IncludeListeMedicament.php');
+                                    ?>
+                                </select>
+                                <input type="number" name="NbEchantillons3" class="NbEnchantillons" min=0 max=10 value=0>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Echantillons 4 :</td>
+                            <td>
+                                <select name="ListeEchantillons4" class="bouton" type="Slct_Echantillons4">
+                                    <option value="0">Rien</option>
+                                    <?php
+                                    include('IncludeListeMedicament.php');
+                                    ?>
+                                </select>
+                                <input type="number" name="NbEchantillons4" class="NbEnchantillons" min=0 max=10 value=0>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Echantillons 5 :</td>
+                            <td>
+                                <select name="ListeEchantillons5" class="bouton" type="Slct_Echantillons5">
+                                    <option value="0">Rien</option>
+                                    <?php
+                                    include('IncludeListeMedicament.php');
+                                    ?>
+                                </select>
+                                <input type="number" name="NbEchantillons5" class="NbEnchantillons" min=0 max=10 value=0>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Echantillons 6 :</td>
+                            <td>
+                                <select name="ListeEchantillons6" class="bouton" type="Slct_Echantillons6">
+                                    <option value="0">Rien</option>
+                                    <?php
+                                    include('IncludeListeMedicament.php');
+                                    ?>
+                                </select>
+                                <input type="number" name="NbEchantillons6" class="NbEnchantillons" min=0 max=10 value=0>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Echantillons 7 :</td>
+                            <td>
+                                <select name="ListeEchantillons7" class="bouton" type="Slct_Echantillons7">
+                                    <option value="0">Rien</option>
+                                    <?php
+                                    include('IncludeListeMedicament.php');
+                                    ?>
+                                </select>
+                                <input type="number" name="NbEchantillons7" class="NbEnchantillons" min=0 max=10 value=0>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Echantillons 8 :</td>
+                            <td>
+                                <select name="ListeEchantillons8" class="bouton" type="Slct_Echantillons8">
+                                    <option value="0">Rien</option>
+                                    <?php
+                                    include('IncludeListeMedicament.php');
+                                    ?>
+                                </select>
+                                <input type="number" name="NbEchantillons8" class="NbEnchantillons" min=0 max=10 value=0>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Echantillons 9 :</td>
+                            <td>
+                                <select name="ListeEchantillons9" class="bouton" type="Slct_Echantillons9">
+                                    <option value="0">Rien</option>
+                                    <?php
+                                    include('IncludeListeMedicament.php');
+                                    ?>
+                                </select>
+                                <input type="number" name="NbEchantillons9" class="NbEnchantillons" min=0 max=10 value=0>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Echantillons 10 :</td>
+                            <td>
+                                <select name="ListeEchantillons10" class="bouton" type="Slct_Echantillons9">
+                                    <option value="0">Rien</option>
+                                    <?php
+                                    include('IncludeListeMedicament.php');
+                                    ?>
+                                </select>
+                                <input type="number" name="NbEchantillons10" class="NbEnchantillons" min=0 max=10 value=0>
+                            </td>
+                        </tr>
+
+
                         <tr>
                             <td>
                                 Saisie définitive : 
