@@ -151,7 +151,7 @@ body{background-color: palegreen;} /*Couleur de fond de tout le site*/
 
 /*CSS PAGE FAQ*/
 
-#FAQ
+.FAQ
 {
     text-align: center;
     font-family: Alef;

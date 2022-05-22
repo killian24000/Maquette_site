@@ -24,22 +24,29 @@
     <?php
     include('HautDePage.HTML');
     ?>
-    <div id="FAQ">    
-        <div class="question" id="Q1">
-            <h2>Condition d'utilisation</h2>
+    <div style="display: flex" id="CorpDePage">
+        <?php
+        include("Raccourci.html");
+        ?>
+        <div class="FAQ" id="CDPCentre">    
+            <div class="question" id="Q1">
+                <h2>Condition d'utilisation</h2>
+            </div>
+                <h3>Vous ne pourrez utiliser ce service que si vous être membre de l'entreprise GSB.
+                <p>Si vous acceptez les présentes conditions vous serez dans l'obligations de les respecter.</p></h3>
+            <div class="question">
+                <h2>Confidentialité</h2>
+            </div>
+                <h3>En utilisant le service GSB, vous consentez à ce que nous collections et utilisions vos données en accord avec le RGPD.</p></h3>
+            <div class="question">
+                <h2>Contenu des services</h2>
+            </div>
+                <h3>Vous êtes résponsable de l'utilisation que vous faites des Services et de tout Contenu                
+                <p>que vous fournissez, y compris de la conformité aux lois, règles et réglementations en vigueur</p></h3>                 
         </div>
-            <h3>Vous ne pourrez utiliser ce service que si vous être membre de l'entreprise GSB.
-            <p>Si vous acceptez les présentes conditions vous serez dans l'obligations de les respecter.</p></h3>
-        <div class="question">
-            <h2>Confidentialité</h2>
-        </div>
-            <h3>En utilisant le service GSB, vous consentez à ce que nous collections et utilisions vos données en accord avec le RGPD.</p></h3>
-        <div class="question">
-            <h2>Contenu des services</h2>
-        </div>
-            <h3>Vous êtes résponsable de l'utilisation que vous faites des Services et de tout Contenu                
-            <p>que vous fournissez, y compris de la conformité aux lois, règles et réglementations en vigueur</p></h3>                 
+        <div id="ZoneRaccourci"></div>
     </div>
+    
     <?php
     include('BasDePage.HTML');
     ?>            
