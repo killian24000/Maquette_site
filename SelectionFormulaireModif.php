@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GSB | Selection du formulaire</title>
-    <link rel="stylesheet" href="CSS/GSB.css">
-    <link rel="stylesheet" href="CSS/Formulaire.css">
-    <link rel="stylesheet" href="CSS/MaquetteCSS.css">
+    <link rel="stylesheet" href="CSS/Banniere.CSS">
+    <link rel="stylesheet" href="CSS/Formulaire.CSS">
+    <link rel="stylesheet" href="CSS/MaquetteCSS.CSS">
     <link rel="icon" type="image/png" sizes="16x16" href="Image/Logo-gsb2.0.png">
 </head>
 <body>
@@ -20,10 +20,10 @@
     ?>
     <div>
         <div id="TitreSection">
-            <h1>Formulaire</h1>
+            <h1>Formulaire : Modification</h1>
         </div>
         <div id="CorpSection">
-            <form action="AffichageFormulaire.php" method="post">
+            <form action="ModificationFormulaire.php" method="post">
                 <select name="ListeRapport" id="">
                     <option value="" selected disabled>Choisiser un formulaire a visionnée</option>
                     <?php
@@ -46,12 +46,12 @@
                         }
                     ?>
                 </select><br>
-                <button type="submit">Afficher</button>
+                <button type="submit">Modifier</button>
             </form>
         </div>
     </div>
     <?php
-    include('BasDePage.html')
+    include('BasDePage.HTML')
     ?>
 </body>
 </html>
