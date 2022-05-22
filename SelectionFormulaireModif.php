@@ -28,10 +28,13 @@
                     <option value="" selected disabled>Choisiser un formulaire a visionnée</option>
                     <?php
                         $reqSQL="SELECT * FROM rapport";
+                        $reqSQL2="SELECT v.VisNom, v.VisPrenom FROM visiteur v INNER JOIN rapport r ON r.UtilisateurID=v.VisID";
                         //Exécute la requête
                         $result=$connexion->query($reqSQL);
+                        $result2=$connexion->query($reqSQL2);
                         //Lecture de la 1re ligne du jeu d'enregistrements
                         $ligne=$result->fetch();
+                        $ligne2=$result2->fetch();
                         //Tant qu'on n'a pas atteint la fin du jeu d'enregistrements,on boucle
                         for($i=1; $ligne!=false; $i++){
                             $IdentifiantUtilisateur=$ligne["UtilisateurID"];
@@ -39,12 +42,15 @@
                             $VersionDuRapport=$ligne["RapportVersion"];
                             $Definitif=$ligne["RapportDefinitif"];
                             $Date=$ligne["RapportDate"];
+                            $Nom=$ligne2["VisNom"];
+                            $Prenom=$ligne2["VisPrenom"];
                             //On génère une ligne dans la liste déroulante
                             if($Definitif=="FALSE"){
-                                echo("<option name='Opt".$i."Rapport' value=".$IdentifiantDuRapport.">Rapport du $Date par $IdentifiantUtilisateur</option>");
+                                echo("<option name='Opt".$i."Rapport' value=".$IdentifiantDuRapport.">Rapport du $Date par $Nom $Prenom</option>");
                             }
                             //Lecture de la ligne suivante dans le jeu d'enregistrement
                             $ligne=$result->fetch();
+                            $ligne2=$result2->fetch();
                         }
                     ?>
                 </select><br>
