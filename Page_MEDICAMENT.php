@@ -116,7 +116,7 @@
                                 <p>DEPOT LEGAL :</p>
                             </td>
                             <td>
-                                <input type="text" name="DepotLegal" class="bouton" value="A">
+                                <input type="text" name="DepotLegal" class="bouton">
                             </td>
                         </tr>
                         <tr>
@@ -124,7 +124,7 @@
                                 <p>NOM COMMERCIAL :</p>
                             </td>
                             <td>
-                                <input type="text" name="NomCommercial" id="bouton" value="B">
+                                <input type="text" name="NomCommercial" id="bouton">
                             </td>
                         </tr>
                         <tr>
@@ -149,7 +149,7 @@
                                 <p>FAMILLE :</p>
                             </td>
                             <td>
-                                <input type="text" name="MedocFamille" id="bouton" value="C">
+                                <input type="text" name="MedocFamille" id="bouton">
                             </td>
                         </tr>
                         <tr>
@@ -158,7 +158,7 @@
                             </td>
                         <tr>
                             <td colspan="2">
-                                <textarea name="TxtARComposant" cols="30" rows="10">D</textarea>
+                                <textarea name="TxtARComposant" cols="30" rows="10"></textarea>
                             </td>
                         </tr>
                         <tr>
@@ -167,7 +167,7 @@
                             </td>
                         <tr>
                             <td colspan="2">
-                                <textarea name="TxtAREffets" cols="30" rows="10">E</textarea>
+                                <textarea name="TxtAREffets" cols="30" rows="10"></textarea>
                             </td>
                         </tr>
                         <tr>
@@ -177,7 +177,7 @@
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <textarea name="TxtARContreIndic" cols="30" rows="10">F</textarea>
+                                <textarea name="TxtARContreIndic" cols="30" rows="10"></textarea>
                             </td>
                         </tr>
                         </tr>
