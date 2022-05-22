@@ -31,6 +31,9 @@
             <br>
             <a href="DepotFormulaire.php">Nouveaux</a>
             <br>
+            <br>
+            <a href="">Modifier</a>
+            <br>
             <br>          
         </div>      
         </div>
@@ -38,6 +41,9 @@
             <h3>Consulter</h3>
         </div>
         <div id="Menu2">
+            <br>
+            <a href="SelectionFormulaire.php">Rapport précédent</a>
+            <br>
             <br>
             <a href="Page_MEDICAMENT.php">Médicament</a>
             <br>
