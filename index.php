@@ -23,7 +23,7 @@
 </head>
 <body>
     <?php
-    include("HautDePage.css")
+    include("HautDePage.html")
     ?>
     <form action="identification.php" method="post" onsubmit="return verifChamps()">
         <div id="mot_de_passe">
@@ -40,7 +40,7 @@
         </div>
     </form>
     <?php
-    include("BasDePage.css")
+    include("BasDePage.html")
     ?>
 </body>
 </html>

@@ -29,7 +29,7 @@ CREATE TABLE Medecin(
     MedFonction VARCHAR(20),
     MedAssocierA VARCHAR(50),
     MedDescription VARCHAR(200),
-    MedCoefDeNotoriété INTEGER,
+    MedCoefDeNotoriete INTEGER,
     MedCoefDeConfience INTEGER,
     MedFormation VARCHAR(20),
     MedMoyPatientele FLOAT,

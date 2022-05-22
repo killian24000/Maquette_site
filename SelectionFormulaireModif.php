@@ -39,8 +39,10 @@
                             $VersionDuRapport=$ligne["RapportVersion"];
                             $Definitif=$ligne["RapportDefinitif"];
                             $Date=$ligne["RapportDate"];
-                            //On génère une ligne dans la liste déroulante 
-                            echo("<option name='Opt".$i."Rapport' value=".$IdentifiantDuRapport.">Rapport du $Date par $IdentifiantUtilisateur</option>");
+                            //On génère une ligne dans la liste déroulante
+                            if($Definitif=="FALSE"){
+                                echo("<option name='Opt".$i."Rapport' value=".$IdentifiantDuRapport.">Rapport du $Date par $IdentifiantUtilisateur</option>");
+                            }
                             //Lecture de la ligne suivante dans le jeu d'enregistrement
                             $ligne=$result->fetch();
                         }
