@@ -32,7 +32,7 @@
             <a href="DepotFormulaire.php">Nouveaux</a>
             <br>
             <br>
-            <a href="">Modifier</a>
+            <a href="SelectionFormulaireModif.php">Modifier</a>
             <br>
             <br>          
         </div>      
@@ -42,7 +42,7 @@
         </div>
         <div id="Menu2">
             <br>
-            <a href="SelectionFormulaire.php">Rapport précédent</a>
+            <a href="SelectionFormulaireVisio.php">Rapport précédent</a>
             <br>
             <br>
             <a href="Page_MEDICAMENT.php">Médicament</a>
