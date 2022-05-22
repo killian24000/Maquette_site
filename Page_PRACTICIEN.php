@@ -13,7 +13,7 @@ if($_SESSION['ok']!='oui')
 <html>
     <head>
         <meta charset="utf-8">
-        <link href="CSS/MaquetteCSS.css" rel="stylesheet">
+        <link href="CSS/GSBCSS.css" rel="stylesheet">
         <link href="CSS/Banniere.CSS" rel="stylesheet">
         <link rel="icon" type="image/png" sizes="16x16" href="Image/Logo-gsb2.0.png">
         <title>GSB | PRATICIEN</title>
