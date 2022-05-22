@@ -20,7 +20,7 @@
     ?>
     <div>
         <div id="TitreSection">
-            <h1>Formulaire</h1>
+            <h1>Formulaire : Visionnage</h1>
         </div>
         <div id="CorpSection">
             <form action="AffichageFormulaire.php" method="post">
