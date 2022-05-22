@@ -4,16 +4,18 @@
     require("connect.php");
     session_start();
     $_SESSION['ok']='non';
+    $_SESSION['IDUser']="";
 
     //On récupère les données saisies dans le formulaire 
     $nomSaisi = $_POST["nom"];
     $motPasseSaisi = $_POST["motDePasse"];
 
     //On récupère dans la base de données le mot de passe qui correspond au nom saisi par le visiteur 
-    $reqSQL="SELECT MotDePasse FROM authentification WHERE Identifiant ='$nomSaisi'";
+    $reqSQL="SELECT * FROM authentification WHERE Identifiant ='$nomSaisi'";
     $res = $connexion->query($reqSQL);
     $ligne = $res->fetch();
     $motPasseBdd = $ligne['MotDePasse'];
+    $IDUser=$ligne['UtilisateurID'];
 
     //On vérifie que le mot de passe saisi est identique à celui enregistrer dans la base de données
 
@@ -33,6 +35,7 @@
         session_start();
         //Création d'une variable de session 
         $_SESSION['ok']='oui';
+        $_SESSION['IDUser']=$IDUser;
         //retour vers la page d'entrée du site
         header("location:Page_acceuil.php"); 
     }
