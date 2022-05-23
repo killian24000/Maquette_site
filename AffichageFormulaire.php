@@ -1,4 +1,15 @@
 <!DOCTYPE html>
+<?php
+    //démarrer une session
+    session_start();
+    //test vérifiant la présence de la variable de session
+    if($_SESSION['ok']!='oui')
+    {
+        //redirection vers la page d'entrée de démarrage du site (index.php)       
+        header("location:index.php");
+        
+    }
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +18,7 @@
     <title>GSB | Affichage de formulaire</title>
     <link rel="stylesheet" href="CSS/Banniere.css">
     <link rel="stylesheet" href="CSS/Formulaire.css">
-    <link rel="stylesheet" href="CSS/MaquetteCSS.css">
+    <link rel="stylesheet" href="CSS/GSBCSS.css">
     <script src="JavaScript/function.js"></script>
     <link rel="icon" type="image/png" sizes="16x16" href="Image/Logo-gsb2.0.png">
 </head>

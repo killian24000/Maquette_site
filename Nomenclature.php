@@ -16,7 +16,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="CSS/GSBCSS.css" rel="stylesheet">
-    <link href="CSS/Banniere.CSS" rel="stylesheet">
+    <link href="CSS/Banniere.css" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="16x16" href="Image/Logo-gsb2.0.png">
     <title>GSB | Conditions d'utilisation</title>
 </head>
@@ -28,7 +28,7 @@
         <?php
         include("Raccourci.html");
         ?>
-        <div class="FAQ" id="CDPCentre">    
+        <div id="FAQ" id="CDPCentre">    
             <div class="question" id="Q1">
                 <h2>Condition d'utilisation</h2>
             </div>

@@ -19,7 +19,7 @@ if($_SESSION['ok']!='oui')
   <link href="CSS/Banniere.css" rel="stylesheet">
   <link href="cSS/Formulaire.css" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="16x16" href="Image/Logo-gsb2.0.png">
-  <title>GSB | PRATICIEN</title>
+  <title>GSB | Selection du PRATICIEN</title>
 </head>
 <body>
   <?php

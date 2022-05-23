@@ -13,9 +13,9 @@ if($_SESSION['ok']!='oui')
 <html>
     <head>
         <meta charset="utf-8">
-        <link a href="CSS/GSBCSS.css" rel="stylesheet">
-        <link href="CSS/Banniere.CSS" rel="stylesheet">
-        <link href="CSS/Formulaire.CSS" rel="stylesheet">
+        <link href="CSS/GSBCSS.css" rel="stylesheet">
+        <link href="CSS/Banniere.css" rel="stylesheet">
+        <link href="CSS/Formulaire.css" rel="stylesheet">
         <link rel="icon" type="image/png" sizes="16x16" href="Image/Logo-gsb2.0.png">
         <title>GSB | FAQ</title>
     </head>
@@ -23,11 +23,11 @@ if($_SESSION['ok']!='oui')
         <?php
         include("HautDePage.html"); //Inclusion de la page correspondant à la bannière du Haut de Page 
         ?>
-        <div style="display: flex">
+        <div style="display: flex" style="justify-content: center;">
             <?php
             include("Raccourci.html"); // Inclusion de la page correspondant au menu 
             ?>
-            <div id="FAQ">
+            <div id="FAQ" >
                 <div class="question" id="Q1">
                 <h2>Je n'arrive pas à me connecter que dois-je faire ? </h2>
                 </div>
